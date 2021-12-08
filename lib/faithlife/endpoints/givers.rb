@@ -6,7 +6,7 @@ module Faithlife
       def givers(params = {})
         request_multiple_objects(
           :post,
-          "/merchants/#{ENV['GROUP_ID']}/givers/list",
+          "/merchants/GROUP_ID/givers/list",
           %w[givers],
           params
         )

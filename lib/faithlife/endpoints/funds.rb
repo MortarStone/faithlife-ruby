@@ -6,7 +6,7 @@ module Faithlife
       def funds(params = {})
         request_multiple_objects(
           :get,
-          "/merchants/#{ENV['GROUP_ID']}/funds",
+          "/merchants/GROUP_ID/funds",
           %w[funds],
           { "includeInactiveFunds" => true }.merge(params)
         )

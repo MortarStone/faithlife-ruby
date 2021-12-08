@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require 'pry'
-require 'pry-byebug'
 require 'active_support/inflector'
 require_relative '../lib/faithlife'
 require_relative 'helpers/campaigns'
@@ -16,7 +15,12 @@ require 'dotenv'
 Dotenv.load('../.env')
 
 @client = Faithlife::Client.new(
-  ENV['ACCESS_TOKEN']
+  group_id: ENV['GROUP_ID'],
+  consumer_key: ENV['CONSUMER_KEY'],
+  consumer_secret: ENV['CONSUMER_SECRET'],
+  oauth_token: ENV['OAUTH_TOKEN'],
+  oauth_secret: ENV['OAUTH_SECRET'],
+  environment: ENV['ENVIRONMENT']
 )
 
 def print_no_access_message

@@ -6,7 +6,7 @@ module Faithlife
       def gifts(params = {})
         request_multiple_objects(
           :get,
-          "/merchants/#{ENV['GROUP_ID']}/gifts",
+          "/merchants/GROUP_ID/gifts",
           %w[gifts],
           params
         )
@@ -15,7 +15,7 @@ module Faithlife
       def gift(id, params = {})
         request_single_object(
           :post,
-          "/merchants/#{ENV['GROUP_ID']}/gifts/#{id}",
+          "/merchants/GROUP_ID/gifts/#{id}",
           %w[gift],
           params
         )

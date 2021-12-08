@@ -6,7 +6,7 @@ module Faithlife
       def gift_schedules(params = {})
         request_multiple_objects(
           :get,
-          "/merchants/#{ENV['GROUP_ID']}/giftschedules",
+          "/merchants/GROUP_ID/giftschedules",
           %w[giftSchedules],
           params
         )

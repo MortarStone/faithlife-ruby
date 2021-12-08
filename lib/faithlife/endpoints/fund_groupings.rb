@@ -6,7 +6,7 @@ module Faithlife
       def fund_groupings(params = {})
         request_multiple_objects(
           :get,
-          "/merchants/#{ENV['GROUP_ID']}/fundGroupings",
+          "/merchants/GROUP_ID/fundGroupings",
           %w[fundGroupings],
           params
         )

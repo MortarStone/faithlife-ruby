@@ -2,11 +2,11 @@
 
 module Faithlife
   module Endpoints
-    module Campaigns
+    module Pledges
       def pledges(params = {})
         request_multiple_objects(
           :post,
-          "/merchants/#{ENV['GROUP_ID']}/pledges/fetch",
+          "/merchants/GROUP_ID/pledges/fetch",
           %w[pledges],
           params
         )
