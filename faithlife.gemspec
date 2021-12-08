@@ -18,6 +18,8 @@ Gem::Specification.new do |spec|
   spec.summary = 'Ruby gem/plugin to interact with the Faithlife API.'
   spec.description = 'Ruby gem/plugin to interact with the Faithlife API. Checkout the project on github for more detail.'
 
+  spec.metadata['rubygems_mfa_required'] = 'true'
+
   spec.files = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r{^(test|spec|features)/})
   end
