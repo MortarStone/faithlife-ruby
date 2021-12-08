@@ -6,7 +6,7 @@ RSpec.describe Faithlife::Endpoints::Pledges do
   describe '#pledges', :vcr do
     before do
       @client = FactoryBot.build(:client)
-      @pledges = @client.pledges[:pledges]
+      @pledges = @client.pledges[:objects]
     end
 
     it 'returns an array' do

@@ -2,10 +2,11 @@
 
 module Faithlife
   class ResponseHandler
-    attr_accessor :response
+    attr_accessor :response, :key_name
 
-    def initialize(response)
+    def initialize(response, key_name)
       @response = response
+      @key_name = key_name
     end
 
     def call
@@ -46,7 +47,9 @@ module Faithlife
     end
 
     def format_response
-      JSON.parse(response.body, symbolize_names: true)
+      obj = JSON.parse(response.body, symbolize_names: true)
+      obj[:objects] = obj.delete(key_name)
+      obj
     end
   end
 end

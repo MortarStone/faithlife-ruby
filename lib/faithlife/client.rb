@@ -54,7 +54,7 @@ module Faithlife
       { consumer: consumer, token: access_token }
     end
 
-    def request(method, path, options = {}, body = nil)
+    def request(method, path, key_name, options = {}, body = nil)
       params = format_params(options)
       request_url = "#{base_url}#{path}".gsub(/GROUP_ID/, @group_id)
       # puts "request_url: #{request_url}, params: #{params.inspect}, body: #{body.inspect}"
@@ -71,7 +71,7 @@ module Faithlife
       hydra.queue(req)
       hydra.run
 
-      ResponseHandler.new(req.response).call
+      ResponseHandler.new(req.response, key_name).call
     end
 
     def format_params(options)

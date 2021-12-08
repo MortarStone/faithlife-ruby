@@ -6,7 +6,7 @@ RSpec.describe Faithlife::Endpoints::Gifts do
   describe '#gifts', :vcr do
     before do
       @client = FactoryBot.build(:client)
-      @gifts = @client.gifts[:gifts]
+      @gifts = @client.gifts[:objects]
     end
 
     it 'returns an array' do
@@ -22,7 +22,7 @@ RSpec.describe Faithlife::Endpoints::Gifts do
   describe '#gift', :vcr do
     before do
       @client = FactoryBot.build(:client)
-      @gift = @client.gift(797_594)[:gift]
+      @gift = @client.gift(797_594)[:objects]
     end
 
     it 'returns a gift object' do

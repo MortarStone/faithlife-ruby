@@ -7,6 +7,7 @@ module Faithlife
         request(
           :get,
           '/v1/merchants/GROUP_ID/funds',
+          :funds,
           { 'includeInactiveFunds' => true }.merge(params)
         )
       end

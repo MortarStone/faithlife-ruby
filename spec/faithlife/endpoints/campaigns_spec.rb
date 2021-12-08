@@ -6,7 +6,7 @@ RSpec.describe Faithlife::Endpoints::Campaigns do
   describe '#campaigns', :vcr do
     before do
       @client = FactoryBot.build(:client)
-      @campaigns = @client.campaigns[:campaigns]
+      @campaigns = @client.campaigns[:objects]
     end
 
     it 'returns an array' do

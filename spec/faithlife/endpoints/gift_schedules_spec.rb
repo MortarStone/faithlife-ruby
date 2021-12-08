@@ -6,7 +6,7 @@ RSpec.describe Faithlife::Endpoints::GiftSchedules do
   describe '#gift_schedules', :vcr do
     before do
       @client = FactoryBot.build(:client)
-      @gift_schedules = @client.gift_schedules[:giftSchedules]
+      @gift_schedules = @client.gift_schedules[:objects]
     end
 
     it 'returns an array' do

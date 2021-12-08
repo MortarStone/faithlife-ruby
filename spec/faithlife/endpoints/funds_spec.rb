@@ -6,7 +6,7 @@ RSpec.describe Faithlife::Endpoints::Funds do
   describe '#funds', :vcr do
     before do
       @client = FactoryBot.build(:client)
-      @funds = @client.funds[:funds]
+      @funds = @client.funds[:objects]
     end
 
     it 'returns an array' do

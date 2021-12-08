@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
 def print_pledges(list)
-  print_list('pledge', 'id', list[:pledges], list[:next])
+  print_list('pledge', 'id', list[:objects], list[:next])
 end
 
 def print_pledge(item)
-  print_item('pledge', item[:pledge])
+  print_item('pledge', item[:objects])
 end
 
 def pledge_columns
