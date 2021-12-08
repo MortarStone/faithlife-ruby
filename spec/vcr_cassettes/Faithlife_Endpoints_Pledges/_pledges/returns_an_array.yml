@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://givingapi.faithlife.com/v1/merchant/7699729/pledges/list
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+      Content-Type:
+      - application/json
+      Authorization:
+      - OAuth oauth_consumer_key="E424645A9BFC8CA64160484660189644ECA557B1", oauth_nonce="WE4zbdcywSrwfH3e80nmJp6M0RZ1xPXpooNeHh1s",
+        oauth_signature="5oVlLLzT9loCUh4uiKGDUZFLFtY%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1638994928", oauth_token="882CB66B149FC3A70E0D424A6B763B163AE660BD",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Length:
+      - '173'
+      Content-Type:
+      - application/json
+      Expires:
+      - "-1"
+      Faithlife-Correlation-Id:
+      - 89aa81bef46f4d348c548da0856eeed4
+      Date:
+      - Wed, 08 Dec 2021 20:22:08 GMT
+    body:
+      encoding: ASCII-8BIT
+      string: '{"pledges":[{"id":"1","groupId":"7699729","created":"2021-11-20T04:13:14Z","giverId":"1031762","campaignId":"836","amountGiven":0.0,"amountPledged":500.00,"deleted":false}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://givingapi.faithlife.com/v1/merchant/7699729/pledges/list
+  recorded_at: Wed, 08 Dec 2021 20:22:08 GMT
+recorded_with: VCR 6.0.0

@@ -1,0 +1,97 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://givingapi.faithlife.com/v1/merchants/7699729/funds?includeInactiveFunds=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+      Content-Type:
+      - application/json
+      Authorization:
+      - OAuth oauth_consumer_key="E424645A9BFC8CA64160484660189644ECA557B1", oauth_nonce="uMw7Z8gACNUOhARjUB4uNCM6iHdrNPUeFrhGS7ggUw",
+        oauth_signature="yy4X%2Fwba2FkexA00BAWHQbU5Dtk%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1638994648", oauth_token="882CB66B149FC3A70E0D424A6B763B163AE660BD",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Length:
+      - '8820'
+      Content-Type:
+      - application/json
+      Expires:
+      - "-1"
+      Faithlife-Correlation-Id:
+      - 3234604734004c94931fdec07204976f
+      Date:
+      - Wed, 08 Dec 2021 20:17:28 GMT
+    body:
+      encoding: ASCII-8BIT
+      string: '{"funds":[{"id":2595,"name":"General Fund","isVisible":true,"status":"Active","start":"2021-04-28T07:00:00Z","allowRecurringGifts":true,"shouldShowAmountInputDescription":false,"fundGrouping":{"id":841,"name":"Tom
+        Test"},"isDeductible":true},{"id":2619,"name":"Missions ","ledgerNumber":"657","isVisible":true,"status":"Retired","end":"2021-09-07T17:25:11Z","allowRecurringGifts":true,"shouldShowAmountInputDescription":false,"isDeductible":true},{"id":2620,"name":"Building
+        Fund","ledgerNumber":"223","isVisible":true,"status":"Retired","start":"2020-12-30T08:00:00Z","end":"2020-12-31T08:00:00Z","allowRecurringGifts":true,"shouldShowAmountInputDescription":false,"isDeductible":true},{"id":6764,"name":"Mr.
+        and Mrs. Smith","isVisible":true,"status":"Active","allowRecurringGifts":true,"shouldShowAmountInputDescription":false,"fundGrouping":{"id":841,"name":"Tom
+        Test"},"isDeductible":true},{"id":6876,"name":"(CBH) Christians Broadcasting
+        Hope 44.30100","isVisible":true,"status":"Retired","start":"2020-12-24T08:00:00Z","end":"2020-12-30T08:00:00Z","allowRecurringGifts":true,"shouldShowAmountInputDescription":false,"isDeductible":true},{"id":8598,"name":"Phillipines","ledgerNumber":"2222","isVisible":true,"status":"Active","allowRecurringGifts":true,"shouldShowAmountInputDescription":false,"fundGrouping":{"id":580,"name":"Missions"},"isDeductible":true},{"id":21632,"name":"Playground
+        Fund","isVisible":true,"status":"Retired","start":"2020-07-14T07:00:00Z","end":"2020-07-28T07:00:00Z","allowRecurringGifts":false,"isDeductible":true},{"id":24471,"name":"Fund
+        to hide","isVisible":true,"status":"Retired","end":"2021-09-07T17:25:11Z","allowRecurringGifts":true,"shouldShowAmountInputDescription":false,"description":"Testing
+        hiding a fund for just manual gifts","isDeductible":true},{"id":28205,"name":"Monday","ledgerNumber":"12","isVisible":true,"status":"Retired","start":"2020-12-11T08:00:00Z","end":"2020-12-17T08:00:00Z","allowRecurringGifts":true,"shouldShowAmountInputDescription":false,"description":"Testing
+        issue with recurring gift button not displaying","isDeductible":true},{"id":29204,"name":"Children''s
+        Ministry Fund","isVisible":true,"status":"Retired","start":"2021-01-17T08:00:00Z","end":"2021-08-01T04:00:00Z","allowRecurringGifts":false,"amountInputDescription":"Alternative
+        Description","shouldShowAmountInputDescription":true,"description":"Main Description","isDeductible":true,"goodsOrServicesProvided":"","minGiftAmount":0.00,"fairMarketValue":0.00},{"id":29205,"name":"Building
+        Fund 1","isVisible":true,"status":"Active","allowRecurringGifts":true,"shouldShowAmountInputDescription":false,"fundGrouping":{"id":841,"name":"Tom
+        Test"},"isDeductible":true},{"id":29206,"name":"Australia: Kyle and Katie
+        Anderson","isVisible":true,"status":"Active","allowRecurringGifts":true,"shouldShowAmountInputDescription":false,"fundGrouping":{"id":580,"name":"Missions"},"isDeductible":true},{"id":29207,"name":"Japan:
+        Mike and Laura","isVisible":true,"status":"Active","allowRecurringGifts":true,"shouldShowAmountInputDescription":false,"fundGrouping":{"id":580,"name":"Missions"},"isDeductible":true},{"id":32275,"name":"Test
+        Fund","isVisible":true,"status":"Retired","end":"2021-09-07T17:25:11Z","allowRecurringGifts":true,"shouldShowAmountInputDescription":false,"description":"fjdkslfjdkls","isDeductible":true},{"id":32400,"name":"Servant
+        Keeper Fund","isVisible":true,"status":"Active","allowRecurringGifts":true,"shouldShowAmountInputDescription":false,"isDeductible":true,"goodsOrServicesProvided":"","minGiftAmount":0.00,"fairMarketValue":0.00},{"id":32401,"name":"A
+        new fund","isVisible":true,"status":"Retired","end":"2021-09-07T17:25:11Z","allowRecurringGifts":true,"amountInputDescription":"This
+        is an alternate description","shouldShowAmountInputDescription":true,"description":"For
+        testing purposes. ","isDeductible":true},{"id":34605,"name":"QPQ #1","isVisible":true,"status":"Retired","end":"2021-09-07T17:25:11Z","allowRecurringGifts":false,"shouldShowAmountInputDescription":false,"isDeductible":false,"goodsOrServicesProvided":"USB
+        Music stick","minGiftAmount":10.00,"fairMarketValue":20.00},{"id":34607,"name":"QPQ
+        #2","isVisible":true,"status":"Retired","end":"2021-09-07T17:25:11Z","allowRecurringGifts":false,"isDeductible":false,"goodsOrServicesProvided":"USB
+        Music stick","minGiftAmount":15.00,"fairMarketValue":10.00},{"id":34608,"name":"QPQ
+        #3","isVisible":true,"status":"Retired","end":"2021-09-07T17:25:11Z","allowRecurringGifts":false,"isDeductible":false,"goodsOrServicesProvided":"Music
+        USB stick","minGiftAmount":5.00,"fairMarketValue":12.00},{"id":34799,"name":"QPQ
+        #3","isVisible":true,"status":"Active","allowRecurringGifts":false,"fundGrouping":{"id":841,"name":"Tom
+        Test"},"isDeductible":false,"goodsOrServicesProvided":"Music USB","minGiftAmount":5.00,"fairMarketValue":8.00},{"id":35060,"name":"QPQ
+        #1","isVisible":true,"status":"Retired","end":"2021-09-07T17:25:11Z","allowRecurringGifts":false,"isDeductible":false,"goodsOrServicesProvided":"Music
+        USB","minGiftAmount":10.00,"fairMarketValue":8.00},{"id":35061,"name":"QPQ
+        #2","isVisible":true,"status":"Retired","end":"2021-09-07T17:25:11Z","allowRecurringGifts":false,"isDeductible":false,"goodsOrServicesProvided":"Calendars","minGiftAmount":5.00,"fairMarketValue":4.00},{"id":35067,"name":"QPQ
+        #1","isVisible":true,"status":"Retired","end":"2021-09-07T17:25:11Z","allowRecurringGifts":false,"isDeductible":false,"goodsOrServicesProvided":"Music
+        USB","minGiftAmount":10.00,"fairMarketValue":8.00},{"id":35068,"name":"QPQ
+        #2","isVisible":true,"status":"Retired","end":"2021-09-07T17:25:11Z","allowRecurringGifts":false,"isDeductible":false,"goodsOrServicesProvided":"Calendars","minGiftAmount":5.00,"fairMarketValue":4.00},{"id":35216,"name":"July
+        22","isVisible":true,"status":"Retired","end":"2021-09-07T17:25:11Z","allowRecurringGifts":true,"isDeductible":true,"goodsOrServicesProvided":"","minGiftAmount":0.00,"fairMarketValue":0.00},{"id":35417,"name":"newFund","isVisible":true,"status":"Active","allowRecurringGifts":false,"isDeductible":true},{"id":35715,"name":"For
+        the Children!","isVisible":true,"status":"Active","allowRecurringGifts":false,"isDeductible":true},{"id":35727,"name":"For
+        the Children!!!!","isVisible":true,"status":"Active","allowRecurringGifts":false,"isDeductible":true},{"id":35728,"name":"For
+        the Children!!!!!!!!!!!!!!!!!","isVisible":true,"status":"Active","allowRecurringGifts":false,"fundGrouping":{"id":841,"name":"Tom
+        Test"},"isDeductible":true},{"id":36010,"name":"Tithe","isVisible":true,"status":"Active","allowRecurringGifts":false,"isDeductible":true},{"id":36218,"name":"Tom
+        Test","ledgerNumber":"101","isVisible":true,"status":"Active","allowRecurringGifts":true,"shouldShowAmountInputDescription":false,"description":"Gifts
+        for testing only","fundGrouping":{"id":841,"name":"Tom Test"},"isDeductible":true},{"id":36263,"name":"Playground","isVisible":true,"status":"Active","allowRecurringGifts":false,"isDeductible":true},{"id":36308,"name":"Missions","isVisible":true,"status":"Active","allowRecurringGifts":false,"isDeductible":true},{"id":36309,"name":"VBS
+        2021","isVisible":true,"status":"Active","allowRecurringGifts":false,"isDeductible":true},{"id":36335,"name":"Tom
+        Test 2","isVisible":true,"status":"Active","allowRecurringGifts":true,"shouldShowAmountInputDescription":false,"description":"Test
+        2 example fund","fundGrouping":{"id":841,"name":"Tom Test"},"isDeductible":true},{"id":36336,"name":"Mission
+        Test","isVisible":true,"status":"Active","allowRecurringGifts":true,"shouldShowAmountInputDescription":false,"isDeductible":true},{"id":36675,"name":"Building","isVisible":true,"status":"Active","allowRecurringGifts":false,"isDeductible":true},{"id":37406,"name":"Youth","isVisible":true,"status":"Active","allowRecurringGifts":false,"isDeductible":true},{"id":37407,"name":"General","isVisible":true,"status":"Active","allowRecurringGifts":false,"isDeductible":true},{"id":41672,"name":"Budget","isVisible":true,"status":"Active","allowRecurringGifts":false,"isDeductible":true},{"id":42183,"name":"Flowers
+        ","isVisible":true,"status":"Active","allowRecurringGifts":false,"fundGrouping":{"id":841,"name":"Tom
+        Test"},"isDeductible":false,"goodsOrServicesProvided":"Flowers","minGiftAmount":10.00,"fairMarketValue":10.00},{"id":42934,"name":"Paster''s
+        Funds","isVisible":true,"status":"Active","allowRecurringGifts":false,"isDeductible":true},{"id":43111,"name":"Spring
+        Youth Retreat","isVisible":true,"status":"Retired","start":"2021-11-08T05:00:00Z","end":"2021-11-09T05:00:00Z","allowRecurringGifts":false,"amountInputDescription":"Support
+        our youth today!","shouldShowAmountInputDescription":true,"description":"Retreat
+        dates: May 1-7, 2022","isDeductible":true,"goodsOrServicesProvided":"","minGiftAmount":0.00,"fairMarketValue":0.00}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://givingapi.faithlife.com/v1/merchants/7699729/funds?includeInactiveFunds=true
+  recorded_at: Wed, 08 Dec 2021 20:17:28 GMT
+recorded_with: VCR 6.0.0

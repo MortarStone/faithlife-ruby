@@ -1,0 +1,250 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://givingapi.faithlife.com/v1/merchants/7699729/giftschedules
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+      Content-Type:
+      - application/json
+      Authorization:
+      - OAuth oauth_consumer_key="E424645A9BFC8CA64160484660189644ECA557B1", oauth_nonce="VM00XfCQVkDm7Dn41CERHuLxZAGHQ6kXmaOssw",
+        oauth_signature="1sSt%2FFlHQgV96g%2Bc6nGcfYXuFqs%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1638994649", oauth_token="882CB66B149FC3A70E0D424A6B763B163AE660BD",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Length:
+      - '46335'
+      Content-Type:
+      - application/json
+      Expires:
+      - "-1"
+      Faithlife-Correlation-Id:
+      - 6d0848a364084acfb776df43300fb6fb
+      Date:
+      - Wed, 08 Dec 2021 20:17:30 GMT
+    body:
+      encoding: ASCII-8BIT
+      string: '{"giftSchedules":[{"id":7467,"group":{"id":"7699729","name":"Blackstone
+        Church","token":"cc-jd","avatarUrl":"//avatars.logoscdn.com/9729/7699729_7302c7e09a2f41aaa858b0bb1f12395f.png"},"giver":{"id":"1031762","groupId":"7699729","kind":"individual","userId":"7810632","name":"Scott
+        Maxa (Faithlife)","envelopeNumber":"333","address":{"address1":"123 Example
+        St.","city":"Bellingham","stateProvince":"Washington","postalCode":"123123","countryAlpha3":"USA","text":"123
+        Example St. Bellingham, Washington 123123, USA"},"chmsRecord":{"id":"people-846547","revision":"13"}},"amount":2.00,"isUserPayingFees":false,"fundAllocations":[{"fund":{"id":2595,"name":"General
+        Fund"},"amount":2.00}],"giftAllocations":[{"destination":{"kind":"fund","fund":{"id":2595,"name":"General
+        Fund","isVisible":true,"status":"Active","start":"2021-04-28T07:00:00Z","allowRecurringGifts":true,"shouldShowAmountInputDescription":false,"fundGrouping":{"id":841,"name":"Tom
+        Test"},"isDeductible":true}},"amount":2.00}],"billingProfileId":"1366786","recurrencePattern":"RRULE:FREQ=MONTHLY;INTERVAL=1;BYMONTHDAY=12","start":"2021-05-12T22:54:03Z","created":"2021-04-12T22:54:12Z","next":"2021-12-12T00:00:00+00:00","status":"Active","source":"Form","lastSuccess":"2021-11-12T16:05:49Z","paymentKind":"ECheck","lastFour":"123","estimatedFees":0.47},{"id":8080,"group":{"id":"7699729","name":"Blackstone
+        Church","token":"cc-jd","avatarUrl":"//avatars.logoscdn.com/9729/7699729_7302c7e09a2f41aaa858b0bb1f12395f.png"},"giver":{"id":"1042455","groupId":"7699729","kind":"family","name":"Salo
+        Family","addressAs":"The Salo Family","address":{"address1":"809 Blackstone
+        Court","address2":"","city":"Bellingham","stateProvince":"Washington","postalCode":"98226","countryAlpha3":"United
+        States","text":"809 Blackstone Court, Bellingham, Washington 98226, United
+        States"},"chmsRecord":{"id":"family-1621091","revision":"1025"}},"surrogateGiver":{"id":"1000102","groupId":"7699729","kind":"individual","userId":"7072994","email":"renn.salo@faithlife.com","phoneNumber":"+15093896657","name":"Renn
+        Salo","envelopeNumber":"280","avatarUrl":"//avatars.logoscdn.com/2994/7072994_large_1c1a3a7807b34eac85e9979ad536a58d.png","address":{"address1":"809
+        Blackstone Ct","city":"Bellingham","postalCode":"98226","countryAlpha3":"USA","text":"809
+        Blackstone Ct Bellingham, 98226, USA"},"chmsRecord":{"id":"people-204125","revision":"1024"}},"amount":20.00,"isUserPayingFees":true,"fundAllocations":[{"fund":{"id":29204,"name":"Children''s
+        Ministry Fund"},"amount":15.00},{"fund":{"id":29207,"name":"Japan: Mike and
+        Laura"},"amount":5.00}],"giftAllocations":[{"destination":{"kind":"fund","fund":{"id":29204,"name":"Children''s
+        Ministry Fund","isVisible":true,"status":"Retired","start":"2021-01-17T08:00:00Z","end":"2021-08-01T04:00:00Z","allowRecurringGifts":false,"amountInputDescription":"Alternative
+        Description","shouldShowAmountInputDescription":true,"description":"Main Description","isDeductible":true,"goodsOrServicesProvided":"","minGiftAmount":0.00,"fairMarketValue":0.00}},"amount":15.00},{"destination":{"kind":"fund","fund":{"id":29207,"name":"Japan:
+        Mike and Laura","isVisible":true,"status":"Active","allowRecurringGifts":true,"shouldShowAmountInputDescription":false,"fundGrouping":{"id":580,"name":"Missions"},"isDeductible":true}},"amount":5.00}],"billingProfileId":"1021380","recurrencePattern":"RRULE:FREQ=MONTHLY;INTERVAL=1;BYMONTHDAY=21","start":"2021-05-21T07:00:00Z","created":"2021-05-21T19:55:47Z","next":"2021-12-21T00:00:00-07:00","status":"Active","source":"Form","lastSuccess":"2021-11-21T16:17:02Z","paymentKind":"Visa","lastFour":"1016","estimatedFees":1.08,"notes":"Testing"},{"id":8692,"group":{"id":"7699729","name":"Blackstone
+        Church","token":"cc-jd","avatarUrl":"//avatars.logoscdn.com/9729/7699729_7302c7e09a2f41aaa858b0bb1f12395f.png"},"giver":{"id":"1070172","groupId":"7699729","kind":"individual","userId":"9579600","email":"francisco.serrano@faithlife.com","name":"Francisco
+        Serrano","avatarUrl":"//avatars.logoscdn.com/9600/9579600_large_68af39fcef6242498566e3281a2d5d99.png","address":{"address1":"2","address2":"3","city":"3","countryAlpha3":"USA","text":"2
+        3 3, USA"},"chmsRecord":{"id":"people-2382590","revision":"6"}},"amount":23.00,"isUserPayingFees":false,"fundAllocations":[{"fund":{"id":32400,"name":"Servant
+        Keeper Fund"},"amount":23.00}],"giftAllocations":[{"destination":{"kind":"fund","fund":{"id":32400,"name":"Servant
+        Keeper Fund","isVisible":true,"status":"Active","allowRecurringGifts":true,"shouldShowAmountInputDescription":false,"isDeductible":true,"goodsOrServicesProvided":"","minGiftAmount":0.00,"fairMarketValue":0.00}},"amount":23.00}],"billingProfileId":"1412195","recurrencePattern":"RRULE:FREQ=YEARLY;INTERVAL=1;BYMONTHDAY=28;BYMONTH=6","start":"2021-06-28T05:00:00Z","end":"2021-06-29","created":"2021-06-28T19:16:32Z","next":"2022-06-28T00:00:00-05:00","status":"Active","source":"Form","paymentKind":"Mastercard","lastFour":"5557","estimatedFees":1.14,"notes":"","missedGifts":{"count":1,"totalAmount":23.00}},{"id":9006,"group":{"id":"7699729","name":"Blackstone
+        Church","token":"cc-jd","avatarUrl":"//avatars.logoscdn.com/9729/7699729_7302c7e09a2f41aaa858b0bb1f12395f.png"},"giver":{"id":"1073107","groupId":"7699729","kind":"individual","email":"bob.baxter@example.com","name":"Bob
+        Baxter","envelopeNumber":"22","chmsRecord":{"id":"people-2815011","revision":"1"}},"amount":200.00,"isUserPayingFees":false,"fundAllocations":[{"fund":{"id":2619,"name":"Missions
+        "},"amount":200.00}],"giftAllocations":[{"destination":{"kind":"fund","fund":{"id":2619,"name":"Missions
+        ","ledgerNumber":"657","isVisible":true,"status":"Retired","end":"2021-09-07T17:25:11Z","allowRecurringGifts":true,"shouldShowAmountInputDescription":false,"isDeductible":true}},"amount":200.00}],"recurrencePattern":"FREQ=WEEKLY;INTERVAL=2;BYDAY=MO","start":"2021-08-16T19:00:00Z","end":"2022-08-16","created":"2021-07-19T18:59:16Z","next":"2021-12-20T00:00:00+05:00","status":"PendingPaymentInfo","source":"FileImport","paymentKind":"Other","estimatedFees":6.43,"notes":"For
+        the Smith mission.","missedGifts":{"count":9,"totalAmount":1800.00}},{"id":9007,"group":{"id":"7699729","name":"Blackstone
+        Church","token":"cc-jd","avatarUrl":"//avatars.logoscdn.com/9729/7699729_7302c7e09a2f41aaa858b0bb1f12395f.png"},"giver":{"id":"1073108","groupId":"7699729","kind":"individual","email":"carol.clark@example.com","name":"Carol
+        Clark","envelopeNumber":"33","address":{"address1":"1313 Bay Street","address2":"Suite
+        B","city":"Bellingham","stateProvince":"Washington","postalCode":"98225","countryAlpha3":"United
+        States","text":"1313 Bay Street, Suite B, Bellingham, Washington 98225, United
+        States"},"chmsRecord":{"id":"people-2815001","revision":"981"}},"amount":300.00,"isUserPayingFees":true,"fundAllocations":[{"fund":{"id":21632,"name":"Playground
+        Fund"},"amount":300.00}],"giftAllocations":[{"destination":{"kind":"fund","fund":{"id":21632,"name":"Playground
+        Fund","isVisible":true,"status":"Retired","start":"2020-07-14T07:00:00Z","end":"2020-07-28T07:00:00Z","allowRecurringGifts":false,"isDeductible":true}},"amount":300.00}],"recurrencePattern":"FREQ=MONTHLY;BYMONTHDAY=12","start":"2021-09-12T19:00:00Z","end":"2022-09-12","created":"2021-07-19T18:59:16Z","next":"2021-12-12T00:00:00+05:00","status":"PendingPaymentInfo","source":"FileImport","paymentKind":"Other","estimatedFees":9.71,"notes":"I
+        hope the kids have fun with their new playground.","missedGifts":{"count":3,"totalAmount":900.00}},{"id":9022,"group":{"id":"7699729","name":"Blackstone
+        Church","token":"cc-jd","avatarUrl":"//avatars.logoscdn.com/9729/7699729_7302c7e09a2f41aaa858b0bb1f12395f.png"},"giver":{"id":"1073243","groupId":"7699729","kind":"individual","email":"lina@example.test","name":"Lina
+        Givens","address":{"address1":"1313 Commercial Street","address2":"Suite B","city":"Bellingham","stateProvince":"Washington","postalCode":"98225","countryAlpha3":"United
+        States","text":"1313 Commercial Street, Suite B, Bellingham, Washington 98225,
+        United States"},"chmsRecord":{"id":"people-2824898","revision":"1021"}},"amount":20.00,"isUserPayingFees":false,"fundAllocations":[{"fund":{"id":36308,"name":"Missions"},"amount":20.00}],"giftAllocations":[{"destination":{"kind":"fund","fund":{"id":36308,"name":"Missions","isVisible":true,"status":"Active","allowRecurringGifts":false,"isDeductible":true}},"amount":20.00}],"recurrencePattern":"FREQ=WEEKLY;INTERVAL=2;BYDAY=MO","start":"2021-08-16T19:00:00Z","end":"2022-08-16","created":"2021-07-20T20:20:08Z","next":"2021-12-20T00:00:00+05:00","status":"PendingPaymentInfo","source":"FileImport","paymentKind":"Other","estimatedFees":1.05,"notes":"For
+        the Smith mission.","missedGifts":{"count":9,"totalAmount":180.00}},{"id":9023,"group":{"id":"7699729","name":"Blackstone
+        Church","token":"cc-jd","avatarUrl":"//avatars.logoscdn.com/9729/7699729_7302c7e09a2f41aaa858b0bb1f12395f.png"},"giver":{"id":"1073244","groupId":"7699729","kind":"individual","email":"gg@example.test","name":"Gina
+        Givens","address":{"address1":"1313 Bay Street","address2":"Suite B","city":"Bellingham","stateProvince":"Washington","postalCode":"98225","countryAlpha3":"United
+        States","text":"1313 Bay Street, Suite B, Bellingham, Washington 98225, United
+        States"},"chmsRecord":{"id":"people-2824899","revision":"1008"}},"amount":30.00,"isUserPayingFees":true,"fundAllocations":[{"fund":{"id":36309,"name":"VBS
+        2021"},"amount":30.00}],"giftAllocations":[{"destination":{"kind":"fund","fund":{"id":36309,"name":"VBS
+        2021","isVisible":true,"status":"Active","allowRecurringGifts":false,"isDeductible":true}},"amount":30.00}],"recurrencePattern":"FREQ=MONTHLY;BYMONTHDAY=12","start":"2021-09-12T19:00:00Z","end":"2022-09-12","created":"2021-07-20T20:20:08Z","next":"2021-12-12T00:00:00+05:00","status":"PendingPaymentInfo","source":"FileImport","paymentKind":"Other","estimatedFees":1.39,"missedGifts":{"count":3,"totalAmount":90.00}},{"id":9040,"group":{"id":"7699729","name":"Blackstone
+        Church","token":"cc-jd","avatarUrl":"//avatars.logoscdn.com/9729/7699729_7302c7e09a2f41aaa858b0bb1f12395f.png"},"giver":{"id":"1073243","groupId":"7699729","kind":"individual","email":"lina@example.test","name":"Lina
+        Givens","address":{"address1":"1313 Commercial Street","address2":"Suite B","city":"Bellingham","stateProvince":"Washington","postalCode":"98225","countryAlpha3":"United
+        States","text":"1313 Commercial Street, Suite B, Bellingham, Washington 98225,
+        United States"},"chmsRecord":{"id":"people-2824898","revision":"1021"}},"amount":20.00,"isUserPayingFees":false,"fundAllocations":[{"fund":{"id":36308,"name":"Missions"},"amount":20.00}],"giftAllocations":[{"destination":{"kind":"fund","fund":{"id":36308,"name":"Missions","isVisible":true,"status":"Active","allowRecurringGifts":false,"isDeductible":true}},"amount":20.00}],"recurrencePattern":"FREQ=WEEKLY;INTERVAL=2;BYDAY=MO","start":"2021-08-16T19:00:00Z","end":"2022-08-16","created":"2021-07-21T22:50:25Z","next":"2021-12-20T00:00:00+05:00","status":"PendingPaymentInfo","source":"FileImport","paymentKind":"Other","estimatedFees":1.05,"notes":"For
+        the Smith mission.","missedGifts":{"count":9,"totalAmount":180.00}},{"id":9041,"group":{"id":"7699729","name":"Blackstone
+        Church","token":"cc-jd","avatarUrl":"//avatars.logoscdn.com/9729/7699729_7302c7e09a2f41aaa858b0bb1f12395f.png"},"giver":{"id":"1073244","groupId":"7699729","kind":"individual","email":"gg@example.test","name":"Gina
+        Givens","address":{"address1":"1313 Bay Street","address2":"Suite B","city":"Bellingham","stateProvince":"Washington","postalCode":"98225","countryAlpha3":"United
+        States","text":"1313 Bay Street, Suite B, Bellingham, Washington 98225, United
+        States"},"chmsRecord":{"id":"people-2824899","revision":"1008"}},"amount":30.00,"isUserPayingFees":true,"fundAllocations":[{"fund":{"id":36309,"name":"VBS
+        2021"},"amount":30.00}],"giftAllocations":[{"destination":{"kind":"fund","fund":{"id":36309,"name":"VBS
+        2021","isVisible":true,"status":"Active","allowRecurringGifts":false,"isDeductible":true}},"amount":30.00}],"recurrencePattern":"FREQ=MONTHLY;BYMONTHDAY=12","start":"2021-09-12T19:00:00Z","end":"2022-09-12","created":"2021-07-21T22:50:25Z","next":"2021-12-12T00:00:00+05:00","status":"PendingPaymentInfo","source":"FileImport","paymentKind":"Other","estimatedFees":1.39,"missedGifts":{"count":3,"totalAmount":90.00}},{"id":9140,"group":{"id":"7699729","name":"Blackstone
+        Church","token":"cc-jd","avatarUrl":"//avatars.logoscdn.com/9729/7699729_7302c7e09a2f41aaa858b0bb1f12395f.png"},"giver":{"id":"1070258","groupId":"7699729","kind":"individual","email":"s.iam@example.com","name":"Sam
+        I Am","chmsRecord":{"id":"people-2690551","revision":"1"}},"amount":100.43,"isUserPayingFees":false,"fundAllocations":[{"fund":{"id":36675,"name":"Building"},"amount":100.43}],"giftAllocations":[{"destination":{"kind":"fund","fund":{"id":36675,"name":"Building","isVisible":true,"status":"Active","allowRecurringGifts":false,"isDeductible":true}},"amount":100.43}],"recurrencePattern":"FREQ=MONTHLY;BYMONTHDAY=13","start":"2021-10-13T19:00:00Z","created":"2021-07-26T18:47:35Z","next":"2021-12-13T00:00:00+05:00","status":"PendingPaymentInfo","source":"FileImport","paymentKind":"Other","estimatedFees":3.45,"missedGifts":{"count":2,"totalAmount":200.86}},{"id":9141,"group":{"id":"7699729","name":"Blackstone
+        Church","token":"cc-jd","avatarUrl":"//avatars.logoscdn.com/9729/7699729_7302c7e09a2f41aaa858b0bb1f12395f.png"},"giver":{"id":"1070259","groupId":"7699729","kind":"individual","email":"j.johnston@example.com","name":"John
+        Johnston","chmsRecord":{"id":"people-2690552","revision":"1"}},"amount":110.57,"isUserPayingFees":false,"fundAllocations":[{"fund":{"id":8598,"name":"Phillipines"},"amount":110.57}],"giftAllocations":[{"destination":{"kind":"fund","fund":{"id":8598,"name":"Phillipines","ledgerNumber":"2222","isVisible":true,"status":"Active","allowRecurringGifts":true,"shouldShowAmountInputDescription":false,"fundGrouping":{"id":580,"name":"Missions"},"isDeductible":true}},"amount":110.57}],"recurrencePattern":"FREQ=WEEKLY;BYDAY=WE","start":"2021-10-13T19:00:00Z","created":"2021-07-26T18:47:35Z","next":"2021-12-15T00:00:00+05:00","status":"PendingPaymentInfo","source":"FileImport","paymentKind":"Other","estimatedFees":3.76,"missedGifts":{"count":9,"totalAmount":995.13}},{"id":9142,"group":{"id":"7699729","name":"Blackstone
+        Church","token":"cc-jd","avatarUrl":"//avatars.logoscdn.com/9729/7699729_7302c7e09a2f41aaa858b0bb1f12395f.png"},"giver":{"id":"1072070","groupId":"7699729","kind":"individual","email":"jam@example.com","name":"Jam
+        Jamminson","chmsRecord":{"id":"people-2777114","revision":"1"}},"amount":12.34,"isUserPayingFees":false,"fundAllocations":[{"fund":{"id":6764,"name":"Mr.
+        and Mrs. Smith"},"amount":12.34}],"giftAllocations":[{"destination":{"kind":"fund","fund":{"id":6764,"name":"Mr.
+        and Mrs. Smith","isVisible":true,"status":"Active","allowRecurringGifts":true,"shouldShowAmountInputDescription":false,"fundGrouping":{"id":841,"name":"Tom
+        Test"},"isDeductible":true}},"amount":12.34}],"recurrencePattern":"FREQ=WEEKLY;INTERVAL=2;BYDAY=WE","start":"2021-10-13T19:00:00Z","created":"2021-07-26T18:47:35Z","next":"2021-12-22T00:00:00+05:00","status":"PendingPaymentInfo","source":"FileImport","paymentKind":"Other","estimatedFees":0.82,"missedGifts":{"count":5,"totalAmount":61.70}},{"id":9143,"group":{"id":"7699729","name":"Blackstone
+        Church","token":"cc-jd","avatarUrl":"//avatars.logoscdn.com/9729/7699729_7302c7e09a2f41aaa858b0bb1f12395f.png"},"giver":{"id":"1074190","groupId":"7699729","kind":"individual","email":"c.c@example.com","name":"Carlie
+        Carlson","chmsRecord":{"id":"people-2872145","revision":"1"}},"amount":111.00,"isUserPayingFees":false,"fundAllocations":[{"fund":{"id":29205,"name":"Building
+        Fund 1"},"amount":111.00}],"giftAllocations":[{"destination":{"kind":"fund","fund":{"id":29205,"name":"Building
+        Fund 1","isVisible":true,"status":"Active","allowRecurringGifts":true,"shouldShowAmountInputDescription":false,"fundGrouping":{"id":841,"name":"Tom
+        Test"},"isDeductible":true}},"amount":111.00}],"recurrencePattern":"FREQ=MONTHLY;BYMONTHDAY=14","start":"2021-10-14T19:00:00Z","created":"2021-07-26T18:47:35Z","next":"2021-12-14T00:00:00+05:00","status":"PendingPaymentInfo","source":"FileImport","paymentKind":"Other","estimatedFees":3.77,"missedGifts":{"count":2,"totalAmount":222.00}},{"id":9144,"group":{"id":"7699729","name":"Blackstone
+        Church","token":"cc-jd","avatarUrl":"//avatars.logoscdn.com/9729/7699729_7302c7e09a2f41aaa858b0bb1f12395f.png"},"giver":{"id":"1070263","groupId":"7699729","kind":"individual","email":"j.h@example.com","name":"James
+        Herriot","chmsRecord":{"id":"people-2690556","revision":"1"}},"amount":98.54,"isUserPayingFees":false,"fundAllocations":[{"fund":{"id":2595,"name":"General
+        Fund"},"amount":98.54}],"giftAllocations":[{"destination":{"kind":"fund","fund":{"id":2595,"name":"General
+        Fund","isVisible":true,"status":"Active","start":"2021-04-28T07:00:00Z","allowRecurringGifts":true,"shouldShowAmountInputDescription":false,"fundGrouping":{"id":841,"name":"Tom
+        Test"},"isDeductible":true}},"amount":98.54}],"recurrencePattern":"FREQ=MONTHLY;BYMONTHDAY=14","start":"2021-12-14T20:00:00Z","created":"2021-07-26T18:47:35Z","next":"2021-12-15T00:00:00+04:00","status":"PendingPaymentInfo","source":"FileImport","paymentKind":"Other","estimatedFees":3.40},{"id":9145,"group":{"id":"7699729","name":"Blackstone
+        Church","token":"cc-jd","avatarUrl":"//avatars.logoscdn.com/9729/7699729_7302c7e09a2f41aaa858b0bb1f12395f.png"},"giver":{"id":"1072072","groupId":"7699729","kind":"individual","email":"j.hazchecks@example.com","name":"John
+        Hazchecks","chmsRecord":{"id":"people-2777116","revision":"1"}},"amount":222.22,"isUserPayingFees":false,"fundAllocations":[{"fund":{"id":2595,"name":"General
+        Fund"},"amount":222.22}],"giftAllocations":[{"destination":{"kind":"fund","fund":{"id":2595,"name":"General
+        Fund","isVisible":true,"status":"Active","start":"2021-04-28T07:00:00Z","allowRecurringGifts":true,"shouldShowAmountInputDescription":false,"fundGrouping":{"id":841,"name":"Tom
+        Test"},"isDeductible":true}},"amount":222.22}],"recurrencePattern":"FREQ=MONTHLY;INTERVAL=3;BYMONTHDAY=16","start":"2021-12-16T20:00:00Z","created":"2021-07-26T18:47:35Z","next":"2021-12-17T00:00:00+04:00","status":"PendingPaymentInfo","source":"FileImport","paymentKind":"Other","estimatedFees":7.09},{"id":9179,"group":{"id":"7699729","name":"Blackstone
+        Church","token":"cc-jd","avatarUrl":"//avatars.logoscdn.com/9729/7699729_7302c7e09a2f41aaa858b0bb1f12395f.png"},"giver":{"id":"1073106","groupId":"7699729","kind":"individual","email":"alice.adams@example.com","name":"Alice
+        Adams","envelopeNumber":"11","address":{"address1":"1313 Commercial Street","address2":"Suite
+        B","city":"Bellingham","stateProvince":"Washington","postalCode":"98225","countryAlpha3":"United
+        States","text":"1313 Commercial Street, Suite B, Bellingham, Washington 98225,
+        United States"},"chmsRecord":{"id":"people-2814977","revision":"1068"}},"amount":100.00,"isUserPayingFees":true,"fundAllocations":[{"fund":{"id":2620,"name":"Building
+        Fund"},"amount":100.00}],"giftAllocations":[{"destination":{"kind":"fund","fund":{"id":2620,"name":"Building
+        Fund","ledgerNumber":"223","isVisible":true,"status":"Retired","start":"2020-12-30T08:00:00Z","end":"2020-12-31T08:00:00Z","allowRecurringGifts":true,"shouldShowAmountInputDescription":false,"isDeductible":true}},"amount":100.00}],"recurrencePattern":"RRULE:FREQ=WEEKLY;INTERVAL=1;BYDAY=SU","start":"2021-09-26T04:00:00Z","end":"2022-07-13","created":"2021-07-29T18:44:23Z","next":"2021-12-12T00:00:00-04:00","status":"PendingPaymentInfo","source":"FileImport","paymentKind":"Other","estimatedFees":3.55,"notes":"For
+        the new foyer.","missedGifts":{"count":11,"totalAmount":1100.00}},{"id":9180,"group":{"id":"7699729","name":"Blackstone
+        Church","token":"cc-jd","avatarUrl":"//avatars.logoscdn.com/9729/7699729_7302c7e09a2f41aaa858b0bb1f12395f.png"},"giver":{"id":"1073107","groupId":"7699729","kind":"individual","email":"bob.baxter@example.com","name":"Bob
+        Baxter","envelopeNumber":"22","chmsRecord":{"id":"people-2815011","revision":"1"}},"amount":200.00,"isUserPayingFees":false,"fundAllocations":[{"fund":{"id":36308,"name":"Missions"},"amount":200.00}],"giftAllocations":[{"destination":{"kind":"fund","fund":{"id":36308,"name":"Missions","isVisible":true,"status":"Active","allowRecurringGifts":false,"isDeductible":true}},"amount":200.00}],"recurrencePattern":"FREQ=WEEKLY;INTERVAL=2;BYDAY=MO","start":"2021-08-16T19:00:00Z","end":"2022-08-16","created":"2021-07-29T18:44:23Z","next":"2021-12-20T00:00:00+05:00","status":"PendingPaymentInfo","source":"FileImport","paymentKind":"Other","estimatedFees":6.43,"notes":"For
+        the Smith mission.","missedGifts":{"count":9,"totalAmount":1800.00}},{"id":9181,"group":{"id":"7699729","name":"Blackstone
+        Church","token":"cc-jd","avatarUrl":"//avatars.logoscdn.com/9729/7699729_7302c7e09a2f41aaa858b0bb1f12395f.png"},"giver":{"id":"1073108","groupId":"7699729","kind":"individual","email":"carol.clark@example.com","name":"Carol
+        Clark","envelopeNumber":"33","address":{"address1":"1313 Bay Street","address2":"Suite
+        B","city":"Bellingham","stateProvince":"Washington","postalCode":"98225","countryAlpha3":"United
+        States","text":"1313 Bay Street, Suite B, Bellingham, Washington 98225, United
+        States"},"chmsRecord":{"id":"people-2815001","revision":"981"}},"amount":300.00,"isUserPayingFees":true,"fundAllocations":[{"fund":{"id":36263,"name":"Playground"},"amount":300.00}],"giftAllocations":[{"destination":{"kind":"fund","fund":{"id":36263,"name":"Playground","isVisible":true,"status":"Active","allowRecurringGifts":false,"isDeductible":true}},"amount":300.00}],"recurrencePattern":"FREQ=MONTHLY;BYMONTHDAY=12","start":"2021-09-12T19:00:00Z","end":"2022-09-12","created":"2021-07-29T18:44:23Z","next":"2021-12-12T00:00:00+05:00","status":"PendingPaymentInfo","source":"FileImport","paymentKind":"Other","estimatedFees":9.71,"notes":"I
+        hope the kids have fun with their new playground.","missedGifts":{"count":3,"totalAmount":900.00}},{"id":9291,"group":{"id":"7699729","name":"Blackstone
+        Church","token":"cc-jd","avatarUrl":"//avatars.logoscdn.com/9729/7699729_7302c7e09a2f41aaa858b0bb1f12395f.png"},"giver":{"id":"1075126","groupId":"7699729","kind":"individual","email":"t.t@example.com","name":"Tuck
+        Tucker","chmsRecord":{"id":"people-3046745","revision":"1"}},"amount":100.43,"isUserPayingFees":false,"fundAllocations":[{"fund":{"id":36675,"name":"Building"},"amount":100.43}],"giftAllocations":[{"destination":{"kind":"fund","fund":{"id":36675,"name":"Building","isVisible":true,"status":"Active","allowRecurringGifts":false,"isDeductible":true}},"amount":100.43}],"recurrencePattern":"FREQ=MONTHLY;BYMONTHDAY=13","start":"2021-10-13T19:00:00Z","created":"2021-08-04T17:11:22Z","next":"2021-12-13T00:00:00+05:00","status":"PendingPaymentInfo","source":"FileImport","paymentKind":"Other","estimatedFees":3.45,"missedGifts":{"count":2,"totalAmount":200.86}},{"id":9292,"group":{"id":"7699729","name":"Blackstone
+        Church","token":"cc-jd","avatarUrl":"//avatars.logoscdn.com/9729/7699729_7302c7e09a2f41aaa858b0bb1f12395f.png"},"giver":{"id":"1075127","groupId":"7699729","kind":"individual","email":"b.w@example.com","name":"Bill
+        Williams","chmsRecord":{"id":"people-3046746","revision":"1"}},"amount":110.57,"isUserPayingFees":false,"fundAllocations":[{"fund":{"id":8598,"name":"Phillipines"},"amount":110.57}],"giftAllocations":[{"destination":{"kind":"fund","fund":{"id":8598,"name":"Phillipines","ledgerNumber":"2222","isVisible":true,"status":"Active","allowRecurringGifts":true,"shouldShowAmountInputDescription":false,"fundGrouping":{"id":580,"name":"Missions"},"isDeductible":true}},"amount":110.57}],"recurrencePattern":"FREQ=WEEKLY;BYDAY=WE","start":"2021-10-13T19:00:00Z","created":"2021-08-04T17:11:22Z","next":"2021-12-15T00:00:00+05:00","status":"PendingPaymentInfo","source":"FileImport","paymentKind":"Other","estimatedFees":3.76,"missedGifts":{"count":9,"totalAmount":995.13}},{"id":9293,"group":{"id":"7699729","name":"Blackstone
+        Church","token":"cc-jd","avatarUrl":"//avatars.logoscdn.com/9729/7699729_7302c7e09a2f41aaa858b0bb1f12395f.png"},"giver":{"id":"1074190","groupId":"7699729","kind":"individual","email":"c.c@example.com","name":"Carlie
+        Carlson","chmsRecord":{"id":"people-2872145","revision":"1"}},"amount":12.34,"isUserPayingFees":false,"fundAllocations":[{"fund":{"id":6764,"name":"Mr.
+        and Mrs. Smith"},"amount":12.34}],"giftAllocations":[{"destination":{"kind":"fund","fund":{"id":6764,"name":"Mr.
+        and Mrs. Smith","isVisible":true,"status":"Active","allowRecurringGifts":true,"shouldShowAmountInputDescription":false,"fundGrouping":{"id":841,"name":"Tom
+        Test"},"isDeductible":true}},"amount":12.34}],"recurrencePattern":"FREQ=WEEKLY;INTERVAL=2;BYDAY=WE","start":"2021-10-13T19:00:00Z","created":"2021-08-04T17:11:22Z","next":"2021-12-22T00:00:00+05:00","status":"PendingPaymentInfo","source":"FileImport","paymentKind":"Other","estimatedFees":0.82,"missedGifts":{"count":5,"totalAmount":61.70}},{"id":9294,"group":{"id":"7699729","name":"Blackstone
+        Church","token":"cc-jd","avatarUrl":"//avatars.logoscdn.com/9729/7699729_7302c7e09a2f41aaa858b0bb1f12395f.png"},"giver":{"id":"1075126","groupId":"7699729","kind":"individual","email":"t.t@example.com","name":"Tuck
+        Tucker","chmsRecord":{"id":"people-3046745","revision":"1"}},"amount":111.00,"isUserPayingFees":false,"fundAllocations":[{"fund":{"id":29205,"name":"Building
+        Fund 1"},"amount":111.00}],"giftAllocations":[{"destination":{"kind":"fund","fund":{"id":29205,"name":"Building
+        Fund 1","isVisible":true,"status":"Active","allowRecurringGifts":true,"shouldShowAmountInputDescription":false,"fundGrouping":{"id":841,"name":"Tom
+        Test"},"isDeductible":true}},"amount":111.00}],"recurrencePattern":"FREQ=MONTHLY;BYMONTHDAY=14","start":"2021-10-14T19:00:00Z","created":"2021-08-04T17:11:22Z","next":"2021-12-14T00:00:00+05:00","status":"PendingPaymentInfo","source":"FileImport","paymentKind":"Other","estimatedFees":3.77,"missedGifts":{"count":2,"totalAmount":222.00}},{"id":9295,"group":{"id":"7699729","name":"Blackstone
+        Church","token":"cc-jd","avatarUrl":"//avatars.logoscdn.com/9729/7699729_7302c7e09a2f41aaa858b0bb1f12395f.png"},"giver":{"id":"1075128","groupId":"7699729","kind":"individual","email":"j.j@example.com","name":"James
+        Jameson","chmsRecord":{"id":"people-3046747","revision":"1"}},"amount":98.54,"isUserPayingFees":false,"fundAllocations":[{"fund":{"id":2595,"name":"General
+        Fund"},"amount":98.54}],"giftAllocations":[{"destination":{"kind":"fund","fund":{"id":2595,"name":"General
+        Fund","isVisible":true,"status":"Active","start":"2021-04-28T07:00:00Z","allowRecurringGifts":true,"shouldShowAmountInputDescription":false,"fundGrouping":{"id":841,"name":"Tom
+        Test"},"isDeductible":true}},"amount":98.54}],"recurrencePattern":"FREQ=MONTHLY;BYMONTHDAY=14","start":"2021-12-14T20:00:00Z","created":"2021-08-04T17:11:22Z","next":"2021-12-15T00:00:00+04:00","status":"PendingPaymentInfo","source":"FileImport","paymentKind":"Other","estimatedFees":3.40},{"id":9296,"group":{"id":"7699729","name":"Blackstone
+        Church","token":"cc-jd","avatarUrl":"//avatars.logoscdn.com/9729/7699729_7302c7e09a2f41aaa858b0bb1f12395f.png"},"giver":{"id":"1075129","groupId":"7699729","kind":"individual","email":"p.p@example.com","name":"Paul
+        Paulson","chmsRecord":{"id":"people-3046748","revision":"1"}},"amount":222.22,"isUserPayingFees":false,"fundAllocations":[{"fund":{"id":2595,"name":"General
+        Fund"},"amount":222.22}],"giftAllocations":[{"destination":{"kind":"fund","fund":{"id":2595,"name":"General
+        Fund","isVisible":true,"status":"Active","start":"2021-04-28T07:00:00Z","allowRecurringGifts":true,"shouldShowAmountInputDescription":false,"fundGrouping":{"id":841,"name":"Tom
+        Test"},"isDeductible":true}},"amount":222.22}],"recurrencePattern":"FREQ=MONTHLY;INTERVAL=3;BYMONTHDAY=16","start":"2021-12-16T20:00:00Z","created":"2021-08-04T17:11:22Z","next":"2021-12-17T00:00:00+04:00","status":"PendingPaymentInfo","source":"FileImport","paymentKind":"Other","estimatedFees":7.09},{"id":9308,"group":{"id":"7699729","name":"Blackstone
+        Church","token":"cc-jd","avatarUrl":"//avatars.logoscdn.com/9729/7699729_7302c7e09a2f41aaa858b0bb1f12395f.png"},"giver":{"id":"1073106","groupId":"7699729","kind":"individual","email":"alice.adams@example.com","name":"Alice
+        Adams","envelopeNumber":"11","address":{"address1":"1313 Commercial Street","address2":"Suite
+        B","city":"Bellingham","stateProvince":"Washington","postalCode":"98225","countryAlpha3":"United
+        States","text":"1313 Commercial Street, Suite B, Bellingham, Washington 98225,
+        United States"},"chmsRecord":{"id":"people-2814977","revision":"1068"}},"amount":100.00,"isUserPayingFees":true,"fundAllocations":[{"fund":{"id":2620,"name":"Building
+        Fund"},"amount":100.00}],"giftAllocations":[{"destination":{"kind":"fund","fund":{"id":2620,"name":"Building
+        Fund","ledgerNumber":"223","isVisible":true,"status":"Retired","start":"2020-12-30T08:00:00Z","end":"2020-12-31T08:00:00Z","allowRecurringGifts":true,"shouldShowAmountInputDescription":false,"isDeductible":true}},"amount":100.00}],"recurrencePattern":"FREQ=WEEKLY;BYDAY=SU","start":"2021-08-08T19:00:00Z","end":"2022-07-13","created":"2021-08-05T18:07:44Z","next":"2021-12-12T00:00:00+05:00","status":"PendingPaymentInfo","source":"FileImport","paymentKind":"Other","estimatedFees":3.55,"notes":"For
+        the new foyer.","missedGifts":{"count":18,"totalAmount":1800.00}},{"id":9309,"group":{"id":"7699729","name":"Blackstone
+        Church","token":"cc-jd","avatarUrl":"//avatars.logoscdn.com/9729/7699729_7302c7e09a2f41aaa858b0bb1f12395f.png"},"giver":{"id":"1073107","groupId":"7699729","kind":"individual","email":"bob.baxter@example.com","name":"Bob
+        Baxter","envelopeNumber":"22","chmsRecord":{"id":"people-2815011","revision":"1"}},"amount":200.00,"isUserPayingFees":false,"fundAllocations":[{"fund":{"id":36308,"name":"Missions"},"amount":200.00}],"giftAllocations":[{"destination":{"kind":"fund","fund":{"id":36308,"name":"Missions","isVisible":true,"status":"Active","allowRecurringGifts":false,"isDeductible":true}},"amount":200.00}],"recurrencePattern":"FREQ=WEEKLY;INTERVAL=2;BYDAY=MO","start":"2021-08-16T19:00:00Z","end":"2022-08-16","created":"2021-08-05T18:07:44Z","next":"2021-12-20T00:00:00+05:00","status":"PendingPaymentInfo","source":"FileImport","paymentKind":"Other","estimatedFees":6.43,"notes":"For
+        the Smith mission.","missedGifts":{"count":9,"totalAmount":1800.00}},{"id":9310,"group":{"id":"7699729","name":"Blackstone
+        Church","token":"cc-jd","avatarUrl":"//avatars.logoscdn.com/9729/7699729_7302c7e09a2f41aaa858b0bb1f12395f.png"},"giver":{"id":"1073108","groupId":"7699729","kind":"individual","email":"carol.clark@example.com","name":"Carol
+        Clark","envelopeNumber":"33","address":{"address1":"1313 Bay Street","address2":"Suite
+        B","city":"Bellingham","stateProvince":"Washington","postalCode":"98225","countryAlpha3":"United
+        States","text":"1313 Bay Street, Suite B, Bellingham, Washington 98225, United
+        States"},"chmsRecord":{"id":"people-2815001","revision":"981"}},"amount":300.00,"isUserPayingFees":true,"fundAllocations":[{"fund":{"id":36263,"name":"Playground"},"amount":300.00}],"giftAllocations":[{"destination":{"kind":"fund","fund":{"id":36263,"name":"Playground","isVisible":true,"status":"Active","allowRecurringGifts":false,"isDeductible":true}},"amount":300.00}],"recurrencePattern":"FREQ=MONTHLY;BYMONTHDAY=12","start":"2021-09-12T19:00:00Z","end":"2022-09-12","created":"2021-08-05T18:07:44Z","next":"2021-12-12T00:00:00+05:00","status":"PendingPaymentInfo","source":"FileImport","paymentKind":"Other","estimatedFees":9.71,"notes":"I
+        hope the kids have fun with their new playground.","missedGifts":{"count":3,"totalAmount":900.00}},{"id":9315,"group":{"id":"7699729","name":"Blackstone
+        Church","token":"cc-jd","avatarUrl":"//avatars.logoscdn.com/9729/7699729_7302c7e09a2f41aaa858b0bb1f12395f.png"},"giver":{"id":"1073106","groupId":"7699729","kind":"individual","email":"alice.adams@example.com","name":"Alice
+        Adams","envelopeNumber":"11","address":{"address1":"1313 Commercial Street","address2":"Suite
+        B","city":"Bellingham","stateProvince":"Washington","postalCode":"98225","countryAlpha3":"United
+        States","text":"1313 Commercial Street, Suite B, Bellingham, Washington 98225,
+        United States"},"chmsRecord":{"id":"people-2814977","revision":"1068"}},"amount":100.00,"isUserPayingFees":true,"fundAllocations":[{"fund":{"id":2620,"name":"Building
+        Fund"},"amount":100.00}],"giftAllocations":[{"destination":{"kind":"fund","fund":{"id":2620,"name":"Building
+        Fund","ledgerNumber":"223","isVisible":true,"status":"Retired","start":"2020-12-30T08:00:00Z","end":"2020-12-31T08:00:00Z","allowRecurringGifts":true,"shouldShowAmountInputDescription":false,"isDeductible":true}},"amount":100.00}],"recurrencePattern":"FREQ=WEEKLY;BYDAY=SU","start":"2021-08-08T19:00:00Z","end":"2022-07-13","created":"2021-08-05T20:07:17Z","next":"2021-12-12T00:00:00+05:00","status":"PendingPaymentInfo","source":"FileImport","paymentKind":"Other","estimatedFees":3.55,"notes":"For
+        the new foyer.","missedGifts":{"count":18,"totalAmount":1800.00}},{"id":9316,"group":{"id":"7699729","name":"Blackstone
+        Church","token":"cc-jd","avatarUrl":"//avatars.logoscdn.com/9729/7699729_7302c7e09a2f41aaa858b0bb1f12395f.png"},"giver":{"id":"1073107","groupId":"7699729","kind":"individual","email":"bob.baxter@example.com","name":"Bob
+        Baxter","envelopeNumber":"22","chmsRecord":{"id":"people-2815011","revision":"1"}},"amount":200.00,"isUserPayingFees":false,"fundAllocations":[{"fund":{"id":36308,"name":"Missions"},"amount":200.00}],"giftAllocations":[{"destination":{"kind":"fund","fund":{"id":36308,"name":"Missions","isVisible":true,"status":"Active","allowRecurringGifts":false,"isDeductible":true}},"amount":200.00}],"recurrencePattern":"FREQ=WEEKLY;INTERVAL=2;BYDAY=MO","start":"2021-08-16T19:00:00Z","end":"2022-08-16","created":"2021-08-05T20:07:17Z","next":"2021-12-20T00:00:00+05:00","status":"PendingPaymentInfo","source":"FileImport","paymentKind":"Other","estimatedFees":6.43,"notes":"For
+        the Smith mission.","missedGifts":{"count":9,"totalAmount":1800.00}},{"id":9317,"group":{"id":"7699729","name":"Blackstone
+        Church","token":"cc-jd","avatarUrl":"//avatars.logoscdn.com/9729/7699729_7302c7e09a2f41aaa858b0bb1f12395f.png"},"giver":{"id":"1073108","groupId":"7699729","kind":"individual","email":"carol.clark@example.com","name":"Carol
+        Clark","envelopeNumber":"33","address":{"address1":"1313 Bay Street","address2":"Suite
+        B","city":"Bellingham","stateProvince":"Washington","postalCode":"98225","countryAlpha3":"United
+        States","text":"1313 Bay Street, Suite B, Bellingham, Washington 98225, United
+        States"},"chmsRecord":{"id":"people-2815001","revision":"981"}},"amount":300.00,"isUserPayingFees":true,"fundAllocations":[{"fund":{"id":36263,"name":"Playground"},"amount":300.00}],"giftAllocations":[{"destination":{"kind":"fund","fund":{"id":36263,"name":"Playground","isVisible":true,"status":"Active","allowRecurringGifts":false,"isDeductible":true}},"amount":300.00}],"recurrencePattern":"FREQ=MONTHLY;BYMONTHDAY=12","start":"2021-09-12T19:00:00Z","end":"2022-09-12","created":"2021-08-05T20:07:17Z","next":"2021-12-12T00:00:00+05:00","status":"PendingPaymentInfo","source":"FileImport","paymentKind":"Other","estimatedFees":9.71,"notes":"I
+        hope the kids have fun with their new playground.","missedGifts":{"count":3,"totalAmount":900.00}},{"id":9600,"group":{"id":"7699729","name":"Blackstone
+        Church","token":"cc-jd","avatarUrl":"//avatars.logoscdn.com/9729/7699729_7302c7e09a2f41aaa858b0bb1f12395f.png"},"giver":{"id":"1073106","groupId":"7699729","kind":"individual","email":"alice.adams@example.com","name":"Alice
+        Adams","envelopeNumber":"11","address":{"address1":"1313 Commercial Street","address2":"Suite
+        B","city":"Bellingham","stateProvince":"Washington","postalCode":"98225","countryAlpha3":"United
+        States","text":"1313 Commercial Street, Suite B, Bellingham, Washington 98225,
+        United States"},"chmsRecord":{"id":"people-2814977","revision":"1068"}},"amount":100.00,"isUserPayingFees":true,"fundAllocations":[{"fund":{"id":2620,"name":"Building
+        Fund"},"amount":100.00}],"giftAllocations":[{"destination":{"kind":"fund","fund":{"id":2620,"name":"Building
+        Fund","ledgerNumber":"223","isVisible":true,"status":"Retired","start":"2020-12-30T08:00:00Z","end":"2020-12-31T08:00:00Z","allowRecurringGifts":true,"shouldShowAmountInputDescription":false,"isDeductible":true}},"amount":100.00}],"recurrencePattern":"FREQ=WEEKLY;BYDAY=SU","start":"2021-08-08T19:00:00Z","end":"2022-07-13","created":"2021-08-20T23:55:54Z","next":"2021-12-12T00:00:00+05:00","status":"PendingPaymentInfo","source":"FileImport","paymentKind":"Other","estimatedFees":3.55,"notes":"For
+        the new foyer.","missedGifts":{"count":18,"totalAmount":1800.00}},{"id":9601,"group":{"id":"7699729","name":"Blackstone
+        Church","token":"cc-jd","avatarUrl":"//avatars.logoscdn.com/9729/7699729_7302c7e09a2f41aaa858b0bb1f12395f.png"},"giver":{"id":"1073107","groupId":"7699729","kind":"individual","email":"bob.baxter@example.com","name":"Bob
+        Baxter","envelopeNumber":"22","chmsRecord":{"id":"people-2815011","revision":"1"}},"amount":200.00,"isUserPayingFees":false,"fundAllocations":[{"fund":{"id":36308,"name":"Missions"},"amount":200.00}],"giftAllocations":[{"destination":{"kind":"fund","fund":{"id":36308,"name":"Missions","isVisible":true,"status":"Active","allowRecurringGifts":false,"isDeductible":true}},"amount":200.00}],"recurrencePattern":"FREQ=WEEKLY;INTERVAL=2;BYDAY=MO","start":"2021-08-16T19:00:00Z","end":"2022-08-16","created":"2021-08-20T23:55:54Z","next":"2021-12-20T00:00:00+05:00","status":"PendingPaymentInfo","source":"FileImport","paymentKind":"Other","estimatedFees":6.43,"notes":"For
+        the Smith mission.","missedGifts":{"count":9,"totalAmount":1800.00}},{"id":9602,"group":{"id":"7699729","name":"Blackstone
+        Church","token":"cc-jd","avatarUrl":"//avatars.logoscdn.com/9729/7699729_7302c7e09a2f41aaa858b0bb1f12395f.png"},"giver":{"id":"1073108","groupId":"7699729","kind":"individual","email":"carol.clark@example.com","name":"Carol
+        Clark","envelopeNumber":"33","address":{"address1":"1313 Bay Street","address2":"Suite
+        B","city":"Bellingham","stateProvince":"Washington","postalCode":"98225","countryAlpha3":"United
+        States","text":"1313 Bay Street, Suite B, Bellingham, Washington 98225, United
+        States"},"chmsRecord":{"id":"people-2815001","revision":"981"}},"amount":300.00,"isUserPayingFees":true,"fundAllocations":[{"fund":{"id":36263,"name":"Playground"},"amount":300.00}],"giftAllocations":[{"destination":{"kind":"fund","fund":{"id":36263,"name":"Playground","isVisible":true,"status":"Active","allowRecurringGifts":false,"isDeductible":true}},"amount":300.00}],"recurrencePattern":"FREQ=MONTHLY;BYMONTHDAY=12","start":"2021-09-12T19:00:00Z","end":"2022-09-12","created":"2021-08-20T23:55:54Z","next":"2021-12-12T00:00:00+05:00","status":"PendingPaymentInfo","source":"FileImport","paymentKind":"Other","estimatedFees":9.71,"notes":"I
+        hope the kids have fun with their new playground.","missedGifts":{"count":3,"totalAmount":900.00}},{"id":9603,"group":{"id":"7699729","name":"Blackstone
+        Church","token":"cc-jd","avatarUrl":"//avatars.logoscdn.com/9729/7699729_7302c7e09a2f41aaa858b0bb1f12395f.png"},"giver":{"id":"1073106","groupId":"7699729","kind":"individual","email":"alice.adams@example.com","name":"Alice
+        Adams","envelopeNumber":"11","address":{"address1":"1313 Commercial Street","address2":"Suite
+        B","city":"Bellingham","stateProvince":"Washington","postalCode":"98225","countryAlpha3":"United
+        States","text":"1313 Commercial Street, Suite B, Bellingham, Washington 98225,
+        United States"},"chmsRecord":{"id":"people-2814977","revision":"1068"}},"amount":100.00,"isUserPayingFees":true,"fundAllocations":[{"fund":{"id":2620,"name":"Building
+        Fund"},"amount":100.00}],"giftAllocations":[{"destination":{"kind":"fund","fund":{"id":2620,"name":"Building
+        Fund","ledgerNumber":"223","isVisible":true,"status":"Retired","start":"2020-12-30T08:00:00Z","end":"2020-12-31T08:00:00Z","allowRecurringGifts":true,"shouldShowAmountInputDescription":false,"isDeductible":true}},"amount":100.00}],"recurrencePattern":"FREQ=WEEKLY;BYDAY=SU","start":"2021-08-08T19:00:00Z","end":"2022-07-13","created":"2021-08-20T23:56:44Z","next":"2021-12-12T00:00:00+05:00","status":"PendingPaymentInfo","source":"FileImport","paymentKind":"Other","estimatedFees":3.55,"notes":"For
+        the new foyer.","missedGifts":{"count":18,"totalAmount":1800.00}},{"id":9604,"group":{"id":"7699729","name":"Blackstone
+        Church","token":"cc-jd","avatarUrl":"//avatars.logoscdn.com/9729/7699729_7302c7e09a2f41aaa858b0bb1f12395f.png"},"giver":{"id":"1073107","groupId":"7699729","kind":"individual","email":"bob.baxter@example.com","name":"Bob
+        Baxter","envelopeNumber":"22","chmsRecord":{"id":"people-2815011","revision":"1"}},"amount":200.00,"isUserPayingFees":false,"fundAllocations":[{"fund":{"id":36308,"name":"Missions"},"amount":200.00}],"giftAllocations":[{"destination":{"kind":"fund","fund":{"id":36308,"name":"Missions","isVisible":true,"status":"Active","allowRecurringGifts":false,"isDeductible":true}},"amount":200.00}],"recurrencePattern":"FREQ=WEEKLY;INTERVAL=2;BYDAY=MO","start":"2021-08-16T19:00:00Z","end":"2022-08-16","created":"2021-08-20T23:56:44Z","next":"2021-12-20T00:00:00+05:00","status":"PendingPaymentInfo","source":"FileImport","paymentKind":"Other","estimatedFees":6.43,"notes":"For
+        the Smith mission.","missedGifts":{"count":9,"totalAmount":1800.00}},{"id":9605,"group":{"id":"7699729","name":"Blackstone
+        Church","token":"cc-jd","avatarUrl":"//avatars.logoscdn.com/9729/7699729_7302c7e09a2f41aaa858b0bb1f12395f.png"},"giver":{"id":"1073108","groupId":"7699729","kind":"individual","email":"carol.clark@example.com","name":"Carol
+        Clark","envelopeNumber":"33","address":{"address1":"1313 Bay Street","address2":"Suite
+        B","city":"Bellingham","stateProvince":"Washington","postalCode":"98225","countryAlpha3":"United
+        States","text":"1313 Bay Street, Suite B, Bellingham, Washington 98225, United
+        States"},"chmsRecord":{"id":"people-2815001","revision":"981"}},"amount":300.00,"isUserPayingFees":true,"fundAllocations":[{"fund":{"id":36263,"name":"Playground"},"amount":300.00}],"giftAllocations":[{"destination":{"kind":"fund","fund":{"id":36263,"name":"Playground","isVisible":true,"status":"Active","allowRecurringGifts":false,"isDeductible":true}},"amount":300.00}],"recurrencePattern":"FREQ=MONTHLY;BYMONTHDAY=12","start":"2021-09-12T19:00:00Z","end":"2022-09-12","created":"2021-08-20T23:56:44Z","next":"2021-12-12T00:00:00+05:00","status":"PendingPaymentInfo","source":"FileImport","paymentKind":"Other","estimatedFees":9.71,"notes":"I
+        hope the kids have fun with their new playground.","missedGifts":{"count":3,"totalAmount":900.00}},{"id":10084,"group":{"id":"7699729","name":"Blackstone
+        Church","token":"cc-jd","avatarUrl":"//avatars.logoscdn.com/9729/7699729_7302c7e09a2f41aaa858b0bb1f12395f.png"},"giver":{"id":"1031963","groupId":"7699729","kind":"individual","userId":"8612114","email":"tina.givens@faithlife.com","phoneNumber":"+19044873105","name":"Tina
+        Givens","envelopeNumber":"225","avatarUrl":"//avatars.logoscdn.com/2114/8612114_large_1a7c11d2ab874e8db52aeb340f8a603c.png","address":{"address1":"1
+        TIAA Bank Field Dr","address2":"","city":"Downtown","stateProvince":"Florida","postalCode":"32202","countryAlpha3":"USA","text":"1
+        TIAA Bank Field Dr Downtown, Florida 32202, USA"},"chmsRecord":{"id":"people-1012063","revision":"1017"}},"amount":30.00,"isUserPayingFees":true,"fundAllocations":[{"fund":{"id":2620,"name":"Building
+        Fund"},"amount":30.00}],"giftAllocations":[{"destination":{"kind":"fund","fund":{"id":2620,"name":"Building
+        Fund","ledgerNumber":"223","isVisible":true,"status":"Retired","start":"2020-12-30T08:00:00Z","end":"2020-12-31T08:00:00Z","allowRecurringGifts":true,"shouldShowAmountInputDescription":false,"isDeductible":true}},"amount":30.00}],"recurrencePattern":"FREQ=MONTHLY;BYMONTHDAY=1","start":"2021-10-01T19:00:00Z","end":"2022-08-01","created":"2021-09-16T19:28:24Z","next":"2022-01-01T00:00:00+05:00","status":"PendingPaymentInfo","source":"FileImport","paymentKind":"Other","estimatedFees":1.39,"missedGifts":{"count":3,"totalAmount":90.00}},{"id":10085,"group":{"id":"7699729","name":"Blackstone
+        Church","token":"cc-jd","avatarUrl":"//avatars.logoscdn.com/9729/7699729_7302c7e09a2f41aaa858b0bb1f12395f.png"},"giver":{"id":"1088425","groupId":"7699729","kind":"individual","email":"jlgraves@example.test","name":"Jerry
+        Graves","address":{"countryAlpha3":"USA","text":"USA"},"chmsRecord":{"id":"people-3482752","revision":"8"}},"amount":20.00,"isUserPayingFees":true,"fundAllocations":[{"fund":{"id":36308,"name":"Missions"},"amount":20.00}],"giftAllocations":[{"destination":{"kind":"fund","fund":{"id":36308,"name":"Missions","isVisible":true,"status":"Active","allowRecurringGifts":false,"isDeductible":true}},"amount":20.00}],"recurrencePattern":"FREQ=MONTHLY;BYMONTHDAY=1","start":"2021-10-01T19:00:00Z","end":"2022-09-01","created":"2021-09-16T19:28:24Z","next":"2022-01-01T00:00:00+05:00","status":"PendingPaymentInfo","source":"FileImport","paymentKind":"Other","estimatedFees":1.08,"missedGifts":{"count":3,"totalAmount":60.00}},{"id":10086,"group":{"id":"7699729","name":"Blackstone
+        Church","token":"cc-jd","avatarUrl":"//avatars.logoscdn.com/9729/7699729_7302c7e09a2f41aaa858b0bb1f12395f.png"},"giver":{"id":"1088426","groupId":"7699729","kind":"individual","email":"kdn@example.test","name":"Kim
+        Nash","address":{"countryAlpha3":"USA","text":"USA"},"chmsRecord":{"id":"people-3482753","revision":"8"}},"amount":10.00,"isUserPayingFees":true,"fundAllocations":[{"fund":{"id":36263,"name":"Playground"},"amount":10.00}],"giftAllocations":[{"destination":{"kind":"fund","fund":{"id":36263,"name":"Playground","isVisible":true,"status":"Active","allowRecurringGifts":false,"isDeductible":true}},"amount":10.00}],"recurrencePattern":"FREQ=MONTHLY;BYMONTHDAY=1","start":"2021-10-01T19:00:00Z","end":"2022-10-01","created":"2021-09-16T19:28:24Z","next":"2022-01-01T00:00:00+05:00","status":"PendingPaymentInfo","source":"FileImport","paymentKind":"Other","estimatedFees":0.77,"missedGifts":{"count":3,"totalAmount":30.00}}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://givingapi.faithlife.com/v1/merchants/7699729/giftschedules
+  recorded_at: Wed, 08 Dec 2021 20:17:30 GMT
+recorded_with: VCR 6.0.0

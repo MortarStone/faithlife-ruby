@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://givingapi.faithlife.com/v1/merchants/7699729/campaigns
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+      Content-Type:
+      - application/json
+      Authorization:
+      - OAuth oauth_consumer_key="E424645A9BFC8CA64160484660189644ECA557B1", oauth_nonce="QE5ytXTUaXAmqarKjItX64q4UreqlCH7c4ceBsBo",
+        oauth_signature="jB2ogCfeNcHsI3hkL2dbv3yExYo%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1638994463", oauth_token="882CB66B149FC3A70E0D424A6B763B163AE660BD",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Length:
+      - '3715'
+      Content-Type:
+      - application/json
+      Expires:
+      - "-1"
+      Faithlife-Correlation-Id:
+      - c68f3280f2f84d76870375b790dc955a
+      Date:
+      - Wed, 08 Dec 2021 20:14:22 GMT
+    body:
+      encoding: ASCII-8BIT
+      string: '{"campaigns":[{"id":463,"name":"Building Campaign","isVisible":true,"status":"Retired","start":"2020-12-02T08:00:00Z","end":"2021-01-31T08:00:00Z","amountGiven":0.0,"remainingPledgedAmount":0.0,"goalAmount":2000.00,"quickAmounts":[50,100,250],"frequencyKind":"oneTime","funds":[{"fund":{"id":2620,"name":"Building
+        Fund","ledgerNumber":"223","isDeductible":true},"amount":334.75}],"fund":{"id":2620,"name":"Building
+        Fund","ledgerNumber":"223","isVisible":true,"status":"Retired","start":"2020-12-30T08:00:00Z","end":"2020-12-31T08:00:00Z","allowRecurringGifts":true,"shouldShowAmountInputDescription":false,"isDeductible":true}},{"id":464,"name":"Missions
+        Campaign","isVisible":true,"status":"Retired","start":"2020-12-01T08:00:00Z","end":"2021-03-31T07:00:00Z","amountGiven":0.0,"remainingPledgedAmount":0.0,"goalAmount":10000.00,"quickAmounts":[50,100,250],"frequencyKind":"oneTime","funds":[{"fund":{"id":8598,"name":"Phillipines","ledgerNumber":"2222","isDeductible":true},"amount":1235.0}],"fund":{"id":8598,"name":"Phillipines","ledgerNumber":"2222","isVisible":true,"status":"Active","allowRecurringGifts":true,"shouldShowAmountInputDescription":false,"isDeductible":true}},{"id":465,"name":"Wedding
+        Gifts","isVisible":true,"status":"Retired","start":"2020-12-02T08:00:00Z","end":"2020-12-31T08:00:00Z","amountGiven":0.0,"remainingPledgedAmount":0.0,"goalAmount":300.00,"quickAmounts":[50,100,250],"frequencyKind":"oneTime","funds":[{"fund":{"id":6764,"name":"Mr.
+        and Mrs. Smith","isDeductible":true},"amount":0.0}],"fund":{"id":6764,"name":"Mr.
+        and Mrs. Smith","isVisible":true,"status":"Active","allowRecurringGifts":true,"shouldShowAmountInputDescription":false,"isDeductible":true}},{"id":509,"name":"Building
+        Campaign","isVisible":true,"status":"Retired","start":"2021-01-17T08:00:00Z","end":"2021-08-31T07:00:00Z","amountGiven":0.0,"remainingPledgedAmount":0.0,"goalAmount":100000.00,"quickAmounts":[50,100,250],"frequencyKind":"oneTime","funds":[{"fund":{"id":29205,"name":"Building
+        Fund 1","isDeductible":true},"amount":0.0}],"fund":{"id":29205,"name":"Building
+        Fund 1","isVisible":true,"status":"Active","allowRecurringGifts":true,"shouldShowAmountInputDescription":false,"isDeductible":true}},{"id":783,"name":"Kitchen
+        Renovation","isVisible":true,"status":"Retired","start":"2021-09-01T07:00:00Z","end":"2021-09-22T22:09:08Z","amountGiven":0.0,"remainingPledgedAmount":0.0,"goalAmount":4500.00,"quickAmounts":[50,100,150],"frequencyKind":"oneTime","funds":[{"fund":{"id":29205,"name":"Building
+        Fund 1","isDeductible":true},"amount":50.0}],"fund":{"id":29205,"name":"Building
+        Fund 1","isVisible":true,"status":"Active","allowRecurringGifts":true,"shouldShowAmountInputDescription":false,"isDeductible":true}},{"id":836,"name":"New
+        Organ Campaign","isVisible":true,"status":"Active","start":"2021-10-01T07:00:00Z","end":"2022-04-30T07:00:00Z","amountGiven":7.00,"remainingPledgedAmount":500.00,"goalAmount":4000.00,"quickAmounts":[50,100,150],"frequencyKind":"oneTime","funds":[{"fund":{"id":36675,"name":"Building","isDeductible":true},"amount":1221.0}],"fund":{"id":36675,"name":"Building","isVisible":true,"status":"Active","allowRecurringGifts":false,"isDeductible":true}},{"id":865,"name":"Test","isVisible":true,"status":"Active","start":"2021-11-18T05:00:00Z","end":"2022-01-31T05:00:00Z","amountGiven":0.0,"remainingPledgedAmount":0.0,"goalAmount":100.00,"quickAmounts":[50,100,150],"frequencyKind":"oneTime","funds":[{"fund":{"id":2595,"name":"General
+        Fund","isDeductible":true},"amount":0.0}],"fund":{"id":2595,"name":"General
+        Fund","isVisible":true,"status":"Active","start":"2021-04-28T07:00:00Z","allowRecurringGifts":true,"shouldShowAmountInputDescription":false,"isDeductible":true}}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://givingapi.faithlife.com/v1/merchants/7699729/campaigns
+  recorded_at: Wed, 08 Dec 2021 20:14:23 GMT
+recorded_with: VCR 6.0.0

@@ -57,7 +57,7 @@ module Faithlife
     def request(method, path, options = {}, body = nil)
       params = format_params(options)
       request_url = "#{base_url}#{path}".gsub(/GROUP_ID/, @group_id)
-      puts "request_url: #{request_url}, params: #{params.inspect}, body: #{body.inspect}"
+      # puts "request_url: #{request_url}, params: #{params.inspect}, body: #{body.inspect}"
 
       hydra = Typhoeus::Hydra.new
       req = Typhoeus::Request.new(

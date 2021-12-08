@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://givingapi.faithlife.com/v1/merchants/7699729/fundGroupings
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+      Content-Type:
+      - application/json
+      Authorization:
+      - OAuth oauth_consumer_key="E424645A9BFC8CA64160484660189644ECA557B1", oauth_nonce="pE6vX4c1XXeVWQVfyOlzF6O03MANccAvapxNSR04oE",
+        oauth_signature="lvD4ggyYd8NtXZVnLReQL44olCI%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1638994647", oauth_token="882CB66B149FC3A70E0D424A6B763B163AE660BD",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Length:
+      - '116'
+      Content-Type:
+      - application/json
+      Expires:
+      - "-1"
+      Faithlife-Correlation-Id:
+      - 36773de93f7d491e88a00a1393373738
+      Date:
+      - Wed, 08 Dec 2021 20:17:27 GMT
+    body:
+      encoding: ASCII-8BIT
+      string: '{"fundGroupings":[{"id":580,"name":"Missions"},{"id":841,"name":"Tom
+        Test"},{"id":942,"name":"Test Fund Grouping"}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://givingapi.faithlife.com/v1/merchants/7699729/fundGroupings
+  recorded_at: Wed, 08 Dec 2021 20:17:28 GMT
+recorded_with: VCR 6.0.0

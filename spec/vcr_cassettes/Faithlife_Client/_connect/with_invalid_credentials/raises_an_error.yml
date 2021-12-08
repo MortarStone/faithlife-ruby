@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://givingapi.faithlife.com/v1/merchants/alsdkfj/gifts/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+      Content-Type:
+      - application/json
+      Authorization:
+      - OAuth oauth_consumer_key="E424645A9BFC8CA64160484660189644ECA557B1", oauth_nonce="g8W8UJ6q9DOK6mMAP2Nb46uZDccSlVShHr2lew5Q14",
+        oauth_signature="EymOTUmMicKH23i%2BcYAkiSdEwPo%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1638994326", oauth_token="882CB66B149FC3A70E0D424A6B763B163AE660BD",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Length:
+      - '104'
+      Content-Type:
+      - application/json
+      Expires:
+      - "-1"
+      Faithlife-Correlation-Id:
+      - 04f7955eeb3341ca878bfa644f7298b4
+      Date:
+      - Wed, 08 Dec 2021 20:12:06 GMT
+    body:
+      encoding: ASCII-8BIT
+      string: '{"code":"InvalidRequest","message":"''groupId'' is invalid: must be
+        a valid group ID, but was ''alsdkfj''."}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://givingapi.faithlife.com/v1/merchants/alsdkfj/gifts/1
+  recorded_at: Wed, 08 Dec 2021 20:12:07 GMT
+recorded_with: VCR 6.0.0

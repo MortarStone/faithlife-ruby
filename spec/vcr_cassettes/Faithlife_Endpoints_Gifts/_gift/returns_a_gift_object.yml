@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://givingapi.faithlife.com/v1/merchants/7699729/gifts/797594
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+      Content-Type:
+      - application/json
+      Authorization:
+      - OAuth oauth_consumer_key="E424645A9BFC8CA64160484660189644ECA557B1", oauth_nonce="DEhR04AcsGKUfecvuvHj5B8XGbeWQuWEPc6hajux4",
+        oauth_signature="9ltaxC78XyxDqMtvE6vGDjN%2FEMU%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1638994653", oauth_token="882CB66B149FC3A70E0D424A6B763B163AE660BD",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Length:
+      - '1137'
+      Content-Type:
+      - application/json
+      Expires:
+      - "-1"
+      Faithlife-Correlation-Id:
+      - 0dea71183cb046c7abfa8c995dfedc90
+      Date:
+      - Wed, 08 Dec 2021 20:17:34 GMT
+    body:
+      encoding: ASCII-8BIT
+      string: '{"gift":{"id":797594,"group":{"id":"7699729","name":"Blackstone Church","token":"cc-jd","avatarUrl":"//avatars.logoscdn.com/9729/7699729_7302c7e09a2f41aaa858b0bb1f12395f.png"},"created":"2020-12-01T20:00:00Z","giver":{"id":"1074089","groupId":"7699729","kind":"individual","name":"Thomas
+        Baughman","chmsRecord":{"id":"people-2863920","revision":"1"}},"amount":12.13,"fees":0.00,"isUserPayingFees":false,"fundAllocations":[{"fund":{"id":36218,"name":"Tom
+        Test","ledgerNumber":"101","isVisible":true,"status":"Active","allowRecurringGifts":true,"shouldShowAmountInputDescription":false,"description":"Gifts
+        for testing only","fundGrouping":{"id":841,"name":"Tom Test"},"isDeductible":true},"amount":12.13}],"giftAllocations":[{"destination":{"kind":"fund","fund":{"id":36218,"name":"Tom
+        Test","ledgerNumber":"101","isVisible":true,"status":"Active","allowRecurringGifts":true,"shouldShowAmountInputDescription":false,"description":"Gifts
+        for testing only","fundGrouping":{"id":841,"name":"Tom Test"},"isDeductible":true}},"amount":12.13}],"paymentKind":"Cash","source":"FileImport","status":"manual","canRefund":false,"fileImportId":"34"}}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://givingapi.faithlife.com/v1/merchants/7699729/gifts/797594
+  recorded_at: Wed, 08 Dec 2021 20:17:34 GMT
+recorded_with: VCR 6.0.0
