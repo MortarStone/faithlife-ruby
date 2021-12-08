@@ -4,10 +4,10 @@ module Faithlife
   module Endpoints
     module FundGroupings
       def fund_groupings(params = {})
-        request_multiple_objects(
+        request(
           :get,
-          "/merchants/GROUP_ID/fundGroupings",
-          %w[fundGroupings],
+          "/v1/merchants/GROUP_ID/fundGroupings",
+          :fundGroupings,
           params
         )
       end

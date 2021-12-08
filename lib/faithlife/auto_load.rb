@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'oauth'
+require 'oauth/signature/plaintext'
 require 'oauth/request_proxy/typhoeus_request'
 require 'rubygems'
 require 'active_support/inflector'

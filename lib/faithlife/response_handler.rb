@@ -2,45 +2,52 @@
 
 module Faithlife
   class ResponseHandler
-    attr_accessor :response
+    attr_accessor :hash_key_name, :response
 
-    def self.check_response(response)
-      obj = new(response)
-      obj.run
-    end
-
-    def initialize(response)
+    def initialize(hash_key_name, response)
+      @hash_key_name = hash_key_name
       @response = response
     end
 
-    def run
-      return if response.success?
+    def call
+      return nil if response.nil?
 
-      exception_class = response_code_exception_class
-      raise exception_class, error_messages if exception_class
+      handle_response
     end
 
     private
 
-    def response_code_exception_class
-      case response.status
+    def handle_response
+      case response.code
+      when 200..299
+        format_response
+      when 302
+        raise Faithlife::Exceptions::RedirectError, error_messages
       when 400
-        Faithlife::Exceptions::BadRequestError
+        raise Faithlife::Exceptions::BadRequestError, error_messages
       when 401
-        Faithlife::Exceptions::UnauthorizedError
+        raise Faithlife::Exceptions::UnauthorizedError, error_messages
       when 403
-        Faithlife::Exceptions::ForbiddenError
+        raise Faithlife::Exceptions::ForbiddenError, error_messages
       when 404
-        Faithlife::Exceptions::NotFoundError
+        raise Faithlife::Exceptions::NotFoundError, error_messages
+      when 405
+        raise Faithlife::Exceptions::MethodNotAllowedError, error_messages
       when 500
-        Faithlife::Exceptions::ResponseError
+        raise Faithlife::Exceptions::ResponseError, error_messages
       else
-        Faithlife::Exceptions::FaithlifeStandardError
+        raise Faithlife::Exceptions::FaithlifeStandardError, error_messages
       end
     end
 
     def error_messages
-      JSON.parse(response.body)['error']['message']
+      return if response.body == ''
+
+      JSON.parse(response.body)['message']
+    end
+
+    def format_response
+      JSON.parse(response.body, symbolize_names: true)[hash_key_name]
     end
   end
 end

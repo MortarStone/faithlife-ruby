@@ -4,19 +4,10 @@ module Faithlife
   module Endpoints
     module GiftSchedules
       def gift_schedules(params = {})
-        request_multiple_objects(
+        request(
           :get,
-          "/merchants/GROUP_ID/giftschedules",
-          %w[giftSchedules],
-          params
-        )
-      end
-
-      def gift(id, params = {})
-        request_single_object(
-          :get,
-          "/giftSchedules/#{id}",
-          %w[giftSchedule],
+          "/v1/merchants/GROUP_ID/giftschedules",
+          :giftSchedules,
           params
         )
       end

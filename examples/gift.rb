@@ -2,5 +2,5 @@
 
 require_relative 'helper'
 
-gift = @client.gift()
+gift = @client.gift(7414)
 print_gift(gift)

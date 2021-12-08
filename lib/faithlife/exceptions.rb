@@ -11,6 +11,9 @@ module Faithlife
     class ConnectionError < FaithlifeStandardError
     end
 
+    class RedirectError < FaithlifeStandardError
+    end
+
     class BadRequestError < FaithlifeStandardError
     end
 
@@ -21,6 +24,9 @@ module Faithlife
     end
 
     class NotFoundError < FaithlifeStandardError
+    end
+
+    class MethodNotAllowedError < FaithlifeStandardError
     end
 
     class ResponseError < FaithlifeStandardError

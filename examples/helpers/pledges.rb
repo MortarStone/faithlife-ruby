@@ -11,12 +11,12 @@ end
 def pledge_columns
   %i[
     id
-    firstname
-    lastname
-    status
-    family_id
-    gender
-    date_added
-    date_modified
+    groupId
+    giverId
+    campaignId
+    amountGiven
+    amountPledged
+    deleted
+    created
   ]
 end

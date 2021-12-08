@@ -4,11 +4,12 @@ module Faithlife
   module Endpoints
     module Pledges
       def pledges(params = {})
-        request_multiple_objects(
+        request(
           :post,
-          "/merchants/GROUP_ID/pledges/fetch",
-          %w[pledges],
-          params
+          "/v1/merchant/GROUP_ID/pledges/list", # singular 'merchant'!
+          :pledges,
+          {},
+          params.to_json
         )
       end
     end

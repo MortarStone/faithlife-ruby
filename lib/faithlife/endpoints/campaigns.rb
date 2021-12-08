@@ -4,10 +4,10 @@ module Faithlife
   module Endpoints
     module Campaigns
       def campaigns(params = {})
-        request_multiple_objects(
+        request(
           :get,
-          "/merchants/GROUP_ID/campaigns",
-          %w[campaigns],
+          "/v1/merchants/GROUP_ID/campaigns",
+          :campaigns,
           params
         )
       end
