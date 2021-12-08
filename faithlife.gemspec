@@ -3,46 +3,42 @@
 lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'faithlife/version'
-Gem::Specification.new do |spec|
-  spec.name          = 'faithlife'
-  spec.version       = Faithlife::VERSION
-  spec.authors       = ['Deb Kallina']
-  spec.email         = ['deb@mortarstone.com']
 
-  spec.summary       = 'An API wrapper for Faithlife written in Ruby.'
-  spec.homepage      = 'https://github.com/MortarStone/faithlife-ruby'
-  spec.license       = 'MIT'
-  spec.required_ruby_version = '>= 2.6.5'
+Gem::Specification.new do |s|
+  s.name = 'faithlife'
+  s.version = Faithlife::VERSION
+  s.platform = Gem::Platform::RUBY
+  s.required_ruby_version = '>= 2.6.5'
 
-  # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
-  # to allow pushing to a single host or delete this section to allow pushing to any host.
-  if spec.respond_to?(:metadata)
-    spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com'"
-  else
-    raise 'RubyGems 2.0 or newer is required to protect against ' \
-          'public gem pushes.'
-  end
+  s.homepage = 'https://github.com/MortarStone/fellowshipone-api-ruby'
+  s.rubyforge_project = 'Project on www.github.com'
+  s.authors = ['Deb Kallina']
+  s.email = ['deb@mortarstone.com']
 
-  spec.files = `git ls-files -z`.split("\x0").reject do |f|
+  s.summary = 'Ruby gem/plugin to interact with the Faithlife API.'
+  s.description = 'Ruby gem/plugin to interact with the Faithlife API. Checkout the project on github for more detail.'
+
+  s.files = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r{^(test|spec|features)/})
   end
-  spec.bindir        = 'exe'
-  spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
-  spec.require_paths = ['lib']
+  s.bindir        = 'exe'
+  s.executables   = s.files.grep(%r{^exe/}) { |f| File.basename(f) }
+  s.require_paths = ['lib']
 
-  spec.add_development_dependency 'factory_bot'
-  spec.add_development_dependency 'pry'
-  spec.add_development_dependency 'rake'
-  spec.add_development_dependency 'rspec'
-  spec.add_development_dependency 'rubocop'
-  spec.add_development_dependency 'rubocop-rspec'
-  spec.add_development_dependency 'simplecov'
-  spec.add_development_dependency 'vcr'
-  spec.add_development_dependency 'webmock'
-  spec.add_dependency 'awrence'
-  spec.add_dependency 'dotenv'
-  spec.add_dependency 'json'
-  spec.add_dependency 'oauth'
-  spec.add_dependency 'plissken'
-  spec.add_dependency 'typhoeus'
+  s.add_development_dependency 'factory_bot'
+  s.add_development_dependency 'pry'
+  s.add_development_dependency 'pry-byebug'
+  s.add_development_dependency 'rake'
+  s.add_development_dependency 'rspec'
+  s.add_development_dependency 'rubocop'
+  s.add_development_dependency 'rubocop-rspec'
+  s.add_development_dependency 'simplecov'
+  s.add_development_dependency 'vcr'
+  s.add_development_dependency 'webmock'
+  s.add_dependency 'awrence'
+  s.add_dependency 'dotenv'
+  s.add_dependency 'json'
+  s.add_dependency 'oauth'
+  s.add_dependency 'plissken'
+  s.add_dependency 'typhoeus'
 end
