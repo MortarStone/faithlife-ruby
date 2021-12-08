@@ -2,10 +2,9 @@
 
 module Faithlife
   class ResponseHandler
-    attr_accessor :hash_key_name, :response
+    attr_accessor :response
 
-    def initialize(hash_key_name, response)
-      @hash_key_name = hash_key_name
+    def initialize(response)
       @response = response
     end
 
@@ -47,7 +46,7 @@ module Faithlife
     end
 
     def format_response
-      JSON.parse(response.body, symbolize_names: true)[hash_key_name]
+      JSON.parse(response.body, symbolize_names: true)
     end
   end
 end

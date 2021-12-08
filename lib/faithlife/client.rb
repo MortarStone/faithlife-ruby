@@ -31,7 +31,7 @@ module Faithlife
         access_token_path: '/v1/accesstoken',
         authorize_path: '/v1/authorize',
         signature_method: 'PLAINTEXT',
-        debug_output: true
+        # debug_output: true
       )
     end
 
@@ -48,15 +48,16 @@ module Faithlife
         site: base_url,
         http_method: method,
         signature_method: 'PLAINTEXT',
-        debug_output: true
+        # debug_output: true
       )
       access_token = OAuth::AccessToken.new(consumer, @oauth_token, @oauth_secret)
       { consumer: consumer, token: access_token }
     end
 
-    def request(method, path, hash_key_name, params = {}, body = nil)
+    def request(method, path, options = {}, body = nil)
+      params = format_params(options)
       request_url = "#{base_url}#{path}".gsub(/GROUP_ID/, @group_id)
-      # puts "request_url: #{request_url}, params: #{params.inspect}, body: #{body.inspect}"
+      puts "request_url: #{request_url}, params: #{params.inspect}, body: #{body.inspect}"
 
       hydra = Typhoeus::Hydra.new
       req = Typhoeus::Request.new(
@@ -70,7 +71,26 @@ module Faithlife
       hydra.queue(req)
       hydra.run
 
-      ResponseHandler.new(hash_key_name, req.response).call
+      ResponseHandler.new(req.response).call
+    end
+
+    def format_params(options)
+      options.each_with_object({}) do |(key, value), params|
+        value = format_datetime(key, value) if value.is_a?(Date)
+        params[key] = value
+      end
+    end
+
+    def format_datetime(key, value)
+      case key
+      when :from, :start
+        value.strftime('%Y-%m-%dT00:00:00Z') # beginning of day
+      when :to, :end
+        value.strftime('%Y-%m-%dT23:59:59Z') # end of day
+      else
+        raise Faithlife::Exceptions::InvalidInputError,
+          "The client does not know what timestamp to place on the '#{key}' parameter"
+      end
     end
   end
 end

@@ -7,7 +7,6 @@ module Faithlife
         request(
           :get,
           "/v1/merchants/GROUP_ID/giftschedules",
-          :giftSchedules,
           params
         )
       end

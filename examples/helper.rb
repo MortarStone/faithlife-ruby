@@ -27,7 +27,7 @@ def print_no_access_message
   puts 'Unless something has recently changed, we do not have access to this table or the table does not exist.'
 end
 
-def print_list(object_name, pk_id_name, list)
+def print_list(object_name, pk_id_name, list, next_code)
   if list.nil? || list.empty?
     puts 'Nothing found'
   else
@@ -40,6 +40,9 @@ def print_list(object_name, pk_id_name, list)
     end
     puts
     print_duplicates(pk_id_name, list)
+    puts
+    puts "Next: #{next_code}"
+    puts
   end
 end
 

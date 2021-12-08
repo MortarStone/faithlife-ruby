@@ -7,7 +7,6 @@ module Faithlife
         request(
           :post,
           "/v1/merchant/GROUP_ID/givers/list", # singular 'merchant'!
-          :givers,
           {},
           params.to_json
         )
