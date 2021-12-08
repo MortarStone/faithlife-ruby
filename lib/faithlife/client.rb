@@ -26,11 +26,11 @@ module Faithlife
       OAuth::Consumer.new(
         consumer_key,
         consumer_secret,
-        site: "https://auth.faithlife.com",
+        site: 'https://auth.faithlife.com',
         request_token_path: '/v1/temporarytoken',
         access_token_path: '/v1/accesstoken',
         authorize_path: '/v1/authorize',
-        signature_method: 'PLAINTEXT',
+        signature_method: 'PLAINTEXT'
         # debug_output: true
       )
     end
@@ -38,7 +38,7 @@ module Faithlife
     private
 
     def base_url
-      "https://givingapi.faithlife.com"
+      'https://givingapi.faithlife.com'
     end
 
     def oauth_params(method)
@@ -47,7 +47,7 @@ module Faithlife
         @consumer_secret,
         site: base_url,
         http_method: method,
-        signature_method: 'PLAINTEXT',
+        signature_method: 'PLAINTEXT'
         # debug_output: true
       )
       access_token = OAuth::AccessToken.new(consumer, @oauth_token, @oauth_secret)
@@ -89,7 +89,7 @@ module Faithlife
         value.strftime('%Y-%m-%dT23:59:59Z') # end of day
       else
         raise Faithlife::Exceptions::InvalidInputError,
-          "The client does not know what timestamp to place on the '#{key}' parameter"
+              "The client does not know what timestamp to place on the '#{key}' parameter"
       end
     end
   end

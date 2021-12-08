@@ -22,12 +22,12 @@ RSpec.describe Faithlife::Endpoints::Gifts do
   describe '#gift', :vcr do
     before do
       @client = FactoryBot.build(:client)
-      @gift = @client.gift(797594)[:gift]
+      @gift = @client.gift(797_594)[:gift]
     end
 
     it 'returns a gift object' do
       expect(@gift).to be_a(Hash)
-      expect(@gift[:id]).to eq(797594)
+      expect(@gift[:id]).to eq(797_594)
     end
   end
 end

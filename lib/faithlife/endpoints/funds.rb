@@ -6,8 +6,8 @@ module Faithlife
       def funds(params = {})
         request(
           :get,
-          "/v1/merchants/GROUP_ID/funds",
-          { "includeInactiveFunds" => true }.merge(params)
+          '/v1/merchants/GROUP_ID/funds',
+          { 'includeInactiveFunds' => true }.merge(params)
         )
       end
     end
