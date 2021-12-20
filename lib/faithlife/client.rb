@@ -54,8 +54,7 @@ module Faithlife
       { consumer: consumer, token: access_token }
     end
 
-    def request(method, path, key_name, options = {}, body = nil)
-      params = format_params(options)
+    def request(method, path, key_name, params = {}, body = nil)
       request_url = "#{base_url}#{path}".gsub(/GROUP_ID/, @group_id)
       # puts "request_url: #{request_url}, params: #{params.inspect}, body: #{body.inspect}"
 
@@ -72,25 +71,6 @@ module Faithlife
       hydra.run
 
       ResponseHandler.new(req.response, key_name).call
-    end
-
-    def format_params(options)
-      options.each_with_object({}) do |(key, value), params|
-        value = format_datetime(key, value) if value.is_a?(Date)
-        params[key] = value
-      end
-    end
-
-    def format_datetime(key, value)
-      case key
-      when :from, :start
-        value.strftime('%Y-%m-%dT00:00:00Z') # beginning of day
-      when :to, :end
-        value.strftime('%Y-%m-%dT23:59:59Z') # end of day
-      else
-        raise Faithlife::Exceptions::InvalidInputError,
-              "The client does not know what timestamp to place on the '#{key}' parameter"
-      end
     end
   end
 end
