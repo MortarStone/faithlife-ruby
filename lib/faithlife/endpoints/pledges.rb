@@ -6,7 +6,7 @@ module Faithlife
       def pledges(params = {})
         request(
           :post,
-          '/v1/merchant/GROUP_ID/pledges/list', # singular 'merchant'!
+          'https://givingapi.faithlife.com/v1/merchant/GROUP_ID/pledges/list', # singular 'merchant'!
           :pledges,
           {},
           params.to_json

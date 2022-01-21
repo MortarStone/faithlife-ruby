@@ -1,0 +1,128 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://faithlife.com/proxy/chms/v1/group/7699729/records/family/get?schemaVersion=3.1.7
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+      Content-Type:
+      - application/json
+      Authorization:
+      - OAuth oauth_consumer_key="E424645A9BFC8CA64160484660189644ECA557B1", oauth_nonce="66FRWzGBlTNuCGvEIyvPvv6CqYlvthR2K9BmQEGI",
+        oauth_signature="aYU%2FdRnLe6nwWrlyKShmKWJkxYU%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1642800896", oauth_token="6C59544BF73F8C6157C8D2E87AE8A8F3BC62D08E",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      cache-control:
+      - no-cache, no-store, must-revalidate
+      pragma:
+      - no-cache
+      content-type:
+      - application/json; charset=utf-8
+      expires:
+      - "-1"
+      server:
+      - Microsoft-IIS/10.0
+      x-aspnetmvc-version:
+      - '5.2'
+      content-security-policy:
+      - script-src 'self'  'unsafe-inline' 'nonce-8HahoHXTEq6ODLqQMEaLTA==' *.faithlifecdn.com
+        *.faithlife.com api.reftagger.com serve.faithlifeads.com platform.twitter.com
+        *.google.com connect.facebook.net cdn.syndication.twimg.com www.googletagmanager.com
+        www.google-analytics.com reftagger.bibliacdn.com cdnjs.cloudflare.com netdna.bootstrapcdn.com
+        *.live.net cdn.amplitude.com cdn.raygun.io request.eprotect.vantivprelive.com
+        request.eprotect.vantivcnp.com maps.googleapis.com www.gstatic.com www.sc.pages08.net
+        *.adroll.com d.adroll.mgr.consensu.org cdn.siftscience.com js.hs-scripts.com
+        www.recaptcha.net cdn.pendo.io data.pendo.io app.pendo.io pendo-static-5148149930131456.storage.googleapis.com  pendo-io-static.storage.googleapis.com
+        apple-pay-gateway.apple.com apple-pay-gateway-nc-pod1.apple.com apple-pay-gateway-nc-pod2.apple.com
+        apple-pay-gateway-nc-pod3.apple.com apple-pay-gateway-nc-pod4.apple.com apple-pay-gateway-nc-pod5.apple.com
+        apple-pay-gateway-pr-pod1.apple.com apple-pay-gateway-pr-pod2.apple.com apple-pay-gateway-pr-pod3.apple.com
+        apple-pay-gateway-pr-pod4.apple.com apple-pay-gateway-pr-pod5.apple.com cn-apple-pay-gateway-sh-pod1.apple.com
+        cn-apple-pay-gateway-sh-pod2.apple.com cn-apple-pay-gateway-sh-pod3.apple.com
+        cn-apple-pay-gateway-tj-pod1.apple.com cn-apple-pay-gateway-tj-pod2.apple.com
+        cn-apple-pay-gateway-tj-pod3.apple.com apple-pay-gateway-cert.apple.com cn-apple-pay-gateway-cert.apple.com
+        js.monitor.azure.com; object-src 'none'; base-uri 'none'
+      x-frame-options:
+      - SAMEORIGIN
+      x-user-id:
+      - '11915497'
+      x-aspnet-version:
+      - 4.0.30319
+      set-cookie:
+      - Session=01/21/2022 21:34:57; domain=faithlife.com; expires=Sat, 22-Jan-2022
+        21:34:57 GMT; path=/
+      request-context:
+      - appId=cid-v1:372a3c1f-f461-41c4-a2fa-f26f661d7241
+      access-control-expose-headers:
+      - Request-Context
+      date:
+      - Fri, 21 Jan 2022 21:34:57 GMT
+      content-length:
+      - '21106'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"records":[{"groupId":7699729,"recordId":"family-2297228","revision":5,"schemaVersion":"3.1.7","recordFieldData":[{"fieldName":"addressAs","data":{"value":{"value":"The  Family","isInferred":true,"confidenceSource":"Family"}},"dataKindName":"inferredString","dataKindVersion":"1.0.0","schemaFieldVersion":"1.1.1"},{"fieldName":"addresses","data":{"value":{"items":[{"verification":{"codes":["NO_GMAP_RESULT"]}}]}},"dataKindName":"address","dataKindVersion":"2.4.0","schemaFieldVersion":"2.2.5"},{"fieldName":"email","data":{"value":{"items":[{}]}},"dataKindName":"keyValueEnum","dataKindVersion":"1.0.0","schemaFieldVersion":"1.2.0"},{"fieldName":"familyName","data":{"value":{"value":"
+        (Wd)","isInferred":true,"confidenceSource":"Family"}},"dataKindName":"inferredString","dataKindVersion":"1.0.0","schemaFieldVersion":"1.1.1"},{"fieldName":"members","data":{"value":{"items":[{"memberId":"people-2297227","isPrimary":false}]}},"dataKindName":"familyMembers","dataKindVersion":"1.0.0","schemaFieldVersion":"2.0.0"},{"fieldName":"phone","data":{"value":{"items":[{"preferences":{"canCall":{"value":true},"canText":{"value":true}}}]}},"dataKindName":"phone","dataKindVersion":"1.1.0","schemaFieldVersion":"1.3.0"}],"createdDate":"2021-05-03T21:28:51Z","revisionDate":"2021-10-02T07:15:49Z","author":{"id":7280479,"name":"FaithlifeTeamServiceAccount"},"creator":{"id":3761884,"name":"Jake
+        R."},"metadata":{"source":"Subscriber"},"isHidden":false,"isDeleted":false,"summary":{"title":"
+        (Wd)","image":"https://files.logoscdn.com/v1/files/45929050/content.svg?signature=Xco8xrdSYAdgP047oC15JeXDOjw"}},{"groupId":7699729,"recordId":"family-1658485","revision":6,"schemaVersion":"3.1.7","recordFieldData":[{"fieldName":"familyName","data":{"value":{"value":"Bivens
+        (Tina)","isInferred":true,"confidenceSource":"Family"}},"dataKindName":"inferredString","dataKindVersion":"1.0.0","schemaFieldVersion":"1.1.1"},{"fieldName":"addressAs","data":{"value":{"value":"The
+        Bivens Family","isInferred":true,"confidenceSource":"Family"}},"dataKindName":"inferredString","dataKindVersion":"1.0.0","schemaFieldVersion":"1.1.1"},{"fieldName":"members","data":{"value":{"items":[{"memberId":"people-1100077","isPrimary":true}]}},"dataKindName":"familyMembers","dataKindVersion":"1.0.0","schemaFieldVersion":"2.0.0"},{"fieldName":"email","data":{"value":{"items":[{"name":"","value":"tbivens@faithlife.test","isInferred":true}],"confidenceSource":"Family"}},"dataKindName":"keyValueEnum","dataKindVersion":"1.0.0","schemaFieldVersion":"1.2.0"},{"fieldName":"includeInDirectory","data":{"value":false},"dataKindName":"boolean","dataKindVersion":"1.0.0","schemaFieldVersion":"1.0.2"}],"createdDate":"2021-02-01T19:05:45Z","revisionDate":"2021-02-01T19:09:18Z","author":{"id":8612114,"name":"Tina
+        Givens"},"creator":{"id":8612114,"name":"Tina Givens"},"metadata":{"source":"User"},"isHidden":false,"isDeleted":false,"summary":{"title":"Bivens
+        (Tina)","image":"https://files.logoscdn.com/v1/files/45929050/content.svg?signature=Xco8xrdSYAdgP047oC15JeXDOjw"}},{"groupId":7699729,"recordId":"family-1670981","revision":1025,"schemaVersion":"3.1.7","recordFieldData":[{"fieldName":"addresses","data":{"value":{"items":[{"city":"Bellingham","road":"1313
+        Commercial Street","text":"1313 Commercial Street, Bellingham, Washington
+        98225, United States","unit":"","state":"Washington","county":"Whatcom County","country":"United
+        States","location":{"latitude":"48.7510232","longitude":"-122.479959"},"postcode":"98225","isInferred":false,"country_code":"US","house_number":"","neighborhood":"","state_district":"Washington"},{"city":"Bellingham","road":"1313
+        Commercial Street","text":"1313 Commercial Street, Bellingham, Washington
+        98225, United States","unit":"","state":"Washington","county":"Whatcom County","country":"United
+        States","location":{"latitude":"48.7510232","longitude":"-122.479959"},"postcode":"98225","isInferred":false,"country_code":"US","house_number":"","neighborhood":"","state_district":"Washington"}]}},"dataKindName":"address","dataKindVersion":"2.4.0","schemaFieldVersion":"2.2.5"},{"fieldName":"familyName","data":{"value":{"value":"Evans"}},"dataKindName":"inferredString","dataKindVersion":"1.0.0","schemaFieldVersion":"1.1.1"},{"fieldName":"members","data":{"value":{"items":[{"memberId":"people-410907","isPrimary":true},{"memberId":"people-701251","isPrimary":false}]}},"dataKindName":"familyMembers","dataKindVersion":"1.0.0","schemaFieldVersion":"2.0.0"},{"fieldName":"addressAs","data":{"value":{"value":"The
+        Evans Family","isInferred":true,"confidenceSource":"Family"}},"dataKindName":"inferredString","dataKindVersion":"1.0.0","schemaFieldVersion":"1.1.1"},{"fieldName":"email","data":{"value":{"items":[{"name":"","value":"schyler.evans@faithlife.com"}]}},"dataKindName":"keyValueEnum","dataKindVersion":"1.0.0","schemaFieldVersion":"1.2.0"},{"fieldName":"envelope","data":{"value":"9999"},"dataKindName":"string","dataKindVersion":"1.0.0","schemaFieldVersion":"1.0.2"},{"fieldName":"phone","data":{"value":{"items":[]}},"dataKindName":"phone","dataKindVersion":"1.1.0","schemaFieldVersion":"1.3.0"}],"createdDate":"2021-02-03T18:13:48Z","revisionDate":"2021-11-10T22:45:16Z","author":{"id":7280479,"name":"FaithlifeTeamServiceAccount"},"creator":{"id":7112867,"name":"GivingApi"},"metadata":{"source":"Backend
+        Cleanup"},"isHidden":false,"isDeleted":false,"summary":{"title":"Evans","image":"https://files.logoscdn.com/v1/files/45929050/content.svg?signature=Xco8xrdSYAdgP047oC15JeXDOjw"}},{"groupId":7699729,"recordId":"family-1622590","revision":1028,"schemaVersion":"3.1.7","recordFieldData":[{"fieldName":"addresses","data":{"value":{"items":[{"city":"Bellingham","road":"1313
+        Commercial Street","text":"1313 Commercial Street, Bellingham, Washington
+        98225, United States","unit":"","state":"Washington","county":"Whatcom County","country":"United
+        States","location":{"latitude":"48.7510232","longitude":"-122.479959"},"postcode":"98225","isInferred":false,"country_code":"US","house_number":"","neighborhood":"","state_district":"Washington"}]}},"dataKindName":"address","dataKindVersion":"2.4.0","schemaFieldVersion":"2.2.5"},{"fieldName":"familyName","data":{"value":{"value":"Givens
+        Family"}},"dataKindName":"inferredString","dataKindVersion":"1.0.0","schemaFieldVersion":"1.1.1"},{"fieldName":"members","data":{"value":{"items":[{"memberId":"people-1012063","isPrimary":true},{"memberId":"people-1642862","isPrimary":true}]}},"dataKindName":"familyMembers","dataKindVersion":"1.0.0","schemaFieldVersion":"2.0.0"},{"fieldName":"addressAs","data":{"value":{"value":"The
+        Givens Family","isInferred":true,"confidenceSource":"Family"}},"dataKindName":"inferredString","dataKindVersion":"1.0.0","schemaFieldVersion":"1.1.1"},{"fieldName":"email","data":{"value":{"items":[{"key":"f767f22e-9eba-46ce-bc6f-3fffeb3c786a","name":"","value":"tina.givens@faithlife.com","isInferred":false,"includeInDirectory":true}],"confidenceSource":"Family"}},"dataKindName":"keyValueEnum","dataKindVersion":"1.0.0","schemaFieldVersion":"1.2.0"},{"fieldName":"photos","data":{"value":{"items":[{"value":"https://files.logoscdn.com/v1/files/48111272/assets/11453063/content.jpg?signature=Qoa5u8gGzEQ0pzEgWQfki4f3Z7Y","md5Hash":"zq8FKNtfmDrI9usDhjAOdA==","visibility":"public","useAsProfile":true,"includeInDirectory":true}],"declinedValue":[]}},"dataKindName":"profilePhotos","dataKindVersion":"2.2.0","schemaFieldVersion":"3.1.0"},{"fieldName":"phone","data":{"value":{"items":[]}},"dataKindName":"phone","dataKindVersion":"1.1.0","schemaFieldVersion":"1.3.0"}],"createdDate":"2021-01-25T23:04:25Z","revisionDate":"2021-10-03T15:52:18Z","author":{"id":7280479,"name":"FaithlifeTeamServiceAccount"},"creator":{"id":7112867,"name":"GivingApi"},"metadata":{"source":"Subscriber"},"isHidden":false,"isDeleted":false,"summary":{"title":"Givens
+        Family","image":"https://files.logoscdn.com/v1/files/48111272/assets/11453063/content.jpg?signature=Qoa5u8gGzEQ0pzEgWQfki4f3Z7Y"}},{"groupId":7699729,"recordId":"family-2122586","revision":2,"schemaVersion":"3.1.7","recordFieldData":[{"fieldName":"addressAs","data":{"value":{"value":"The
+        Henke Family","isInferred":true,"confidenceSource":"Family"}},"dataKindName":"inferredString","dataKindVersion":"1.0.0","schemaFieldVersion":"1.1.1"},{"fieldName":"familyName","data":{"value":{"value":"Henke
+        (David)","isInferred":true,"confidenceSource":"Family"}},"dataKindName":"inferredString","dataKindVersion":"1.0.0","schemaFieldVersion":"1.1.1"},{"fieldName":"members","data":{"value":{"items":[{"memberId":"people-2122580","isPrimary":true}]}},"dataKindName":"familyMembers","dataKindVersion":"1.0.0","schemaFieldVersion":"2.0.0"},{"fieldName":"addresses","data":{"value":{"items":[{"key":"6974c762-4588-446a-9dc5-51d007ed5ce0","city":"","road":"","test":"","text":"Idaho,
+        Idaho\nUnited States","unit":"","state":"Idaho","county":"","country":"United
+        States","location":{"latitude":"44.0682019","longitude":"-114.7420408"},"postcode":"","verified":{"date":"","codes":[],"suggestion":{}},"isInferred":true,"addressType":"","country_code":"US","house_number":"","neighborhood":"","verification":{"date":"2021-04-09T01:36:50.421Z","codes":["GAPI01"],"suggestion":null},"state_district":"Idaho","confidenceSource":"Family","includeInDirectory":true}],"confidenceSource":"Family"}},"dataKindName":"address","dataKindVersion":"2.4.0","schemaFieldVersion":"2.2.5"},{"fieldName":"email","data":{"value":{"items":[{"key":"a03ed4c7-7638-42da-8a9a-03ff2cee53a4","name":"","value":"david.henke79@gmail.com","isInferred":false,"includeInDirectory":true}],"confidenceSource":"Family"}},"dataKindName":"keyValueEnum","dataKindVersion":"1.0.0","schemaFieldVersion":"1.2.0"}],"createdDate":"2021-04-09T01:39:41Z","revisionDate":"2021-04-15T16:18:32Z","author":{"id":8279805,"name":"Schyler
+        Evans"},"creator":{"id":7072994},"metadata":{"source":"User"},"isHidden":false,"isDeleted":false,"summary":{"title":"Henke
+        (David)","image":"https://files.logoscdn.com/v1/files/45929050/content.svg?signature=Xco8xrdSYAdgP047oC15JeXDOjw"}},{"groupId":7699729,"recordId":"family-1671192","revision":1,"schemaVersion":"3.1.7","recordFieldData":[{"fieldName":"familyName","data":{"value":{"value":"Jameson
+        Family"}},"dataKindName":"inferredString","dataKindVersion":"1.0.0","schemaFieldVersion":"1.1.1"}],"createdDate":"2021-02-03T18:30:20Z","revisionDate":"2021-02-03T18:30:20Z","author":{"id":7112867,"name":"GivingApi"},"creator":{"id":7112867,"name":"GivingApi"},"isHidden":false,"isDeleted":false,"summary":{"title":"Jameson
+        Family","image":"https://files.logoscdn.com/v1/files/45929050/content.svg?signature=Xco8xrdSYAdgP047oC15JeXDOjw"}},{"groupId":7699729,"recordId":"family-1620533","revision":10,"schemaVersion":"3.1.7","recordFieldData":[{"fieldName":"email","data":{"value":{"items":[{"name":"","value":"jakefamily@gmail.com"}]}},"dataKindName":"keyValueEnum","dataKindVersion":"1.0.0","schemaFieldVersion":"1.2.0"},{"fieldName":"familyName","data":{"value":{"value":"Robertson"}},"dataKindName":"inferredString","dataKindVersion":"1.0.0","schemaFieldVersion":"1.1.1"},{"fieldName":"addressAs","data":{"value":{"value":"The
+        Robertson Family","isInferred":true,"confidenceSource":"Family"}},"dataKindName":"inferredString","dataKindVersion":"1.0.0","schemaFieldVersion":"1.1.1"},{"fieldName":"members","data":{"value":{"items":[{"memberId":"people-40100","isPrimary":true}]}},"dataKindName":"familyMembers","dataKindVersion":"1.0.0","schemaFieldVersion":"2.0.0"},{"fieldName":"addresses","data":{"value":{"items":[{"verification":{"codes":["NO_GMAP_RESULT"]}}]}},"dataKindName":"address","dataKindVersion":"2.4.0","schemaFieldVersion":"2.2.5"},{"fieldName":"phone","data":{"value":{"items":[]}},"dataKindName":"phone","dataKindVersion":"1.1.0","schemaFieldVersion":"1.3.0"}],"createdDate":"2021-01-25T17:38:07Z","revisionDate":"2021-10-02T07:15:49Z","author":{"id":7280479,"name":"FaithlifeTeamServiceAccount"},"creator":{"id":7112867,"name":"GivingApi"},"metadata":{"source":"Subscriber"},"isHidden":false,"isDeleted":false,"summary":{"title":"Robertson","image":"https://files.logoscdn.com/v1/files/45929050/content.svg?signature=Xco8xrdSYAdgP047oC15JeXDOjw"}},{"groupId":7699729,"recordId":"family-1620612","revision":8,"schemaVersion":"3.1.7","recordFieldData":[{"fieldName":"addresses","data":{"value":{"items":[{"city":"Bellingham","road":"123
+        Example St","text":"123 Example St Bellingham, Washington 98229, USA","state":"Washington","country":"USA","postcode":"98229","verification":{"codes":["NO_GMAP_RESULT"]}}]}},"dataKindName":"address","dataKindVersion":"2.4.0","schemaFieldVersion":"2.2.5"},{"fieldName":"familyName","data":{"value":{"value":"Robertson"}},"dataKindName":"inferredString","dataKindVersion":"1.0.0","schemaFieldVersion":"1.1.1"},{"fieldName":"members","data":{"value":{"items":[{"memberId":"people-40100","isPrimary":true}]}},"dataKindName":"familyMembers","dataKindVersion":"1.0.0","schemaFieldVersion":"2.0.0"},{"fieldName":"addressAs","data":{"value":{"value":"The
+        Robertson Family","isInferred":true,"confidenceSource":"Family"}},"dataKindName":"inferredString","dataKindVersion":"1.0.0","schemaFieldVersion":"1.1.1"},{"fieldName":"email","data":{"value":{"items":[{"name":"","value":"jake.robertson@logos.com","isInferred":true}]}},"dataKindName":"keyValueEnum","dataKindVersion":"1.0.0","schemaFieldVersion":"1.2.0"}],"createdDate":"2021-01-25T18:13:08Z","revisionDate":"2021-10-02T07:15:49Z","author":{"id":7280479,"name":"FaithlifeTeamServiceAccount"},"creator":{"id":7112867,"name":"GivingApi"},"metadata":{"source":"Subscriber"},"isHidden":false,"isDeleted":false,"summary":{"title":"Robertson","image":"https://files.logoscdn.com/v1/files/45929050/content.svg?signature=Xco8xrdSYAdgP047oC15JeXDOjw"}},{"groupId":7699729,"recordId":"family-1633328","revision":1029,"schemaVersion":"3.1.7","recordFieldData":[{"fieldName":"addresses","data":{"value":{"items":[{"city":"Bellingham","road":"2618
+        Park Street","text":"2618 Park Street, Bellingham, Washington 98225, United
+        States","unit":"","state":"Washington","county":"Whatcom County","country":"United
+        States","location":{"latitude":"48.7651398","longitude":"-122.4904019"},"postcode":"98225","isInferred":false,"country_code":"US","house_number":"","neighborhood":"","state_district":"Washington"}]}},"dataKindName":"address","dataKindVersion":"2.4.0","schemaFieldVersion":"2.2.5"},{"fieldName":"familyName","data":{"value":{"value":"Rosenburg
+        (Mitch & Thea)","isInferred":false,"confidenceSource":""}},"dataKindName":"inferredString","dataKindVersion":"1.0.0","schemaFieldVersion":"1.1.1"},{"fieldName":"members","data":{"value":{"items":[{"memberId":"people-176066","isPrimary":true}]}},"dataKindName":"familyMembers","dataKindVersion":"1.0.0","schemaFieldVersion":"2.0.0"},{"fieldName":"addressAs","data":{"value":{"value":"The
+        Rosenburg Family","isInferred":true,"confidenceSource":"Family"}},"dataKindName":"inferredString","dataKindVersion":"1.0.0","schemaFieldVersion":"1.1.1"},{"fieldName":"email","data":{"value":{"items":[{"key":"f2339e92-1d72-4f6c-9d3f-cfac845d7921","name":"","value":"mrosenburg@logos.com","isInferred":true,"includeInDirectory":true},{"key":"1b2d7d98-76bb-4b1b-93d9-a1fabd6f18ec","name":"","value":"mitchknife@gmail.com","isInferred":true}],"confidenceSource":"Family"}},"dataKindName":"keyValueEnum","dataKindVersion":"1.0.0","schemaFieldVersion":"1.2.0"},{"fieldName":"phone","data":{"value":{"items":[{"name":"Mobile","value":"(360)
+        393-8587","isInferred":true,"preferences":{"canCall":{"value":true},"canText":{"value":true}},"includeInDirectory":true}],"confidenceSource":"Family"}},"dataKindName":"phone","dataKindVersion":"1.1.0","schemaFieldVersion":"1.3.0"}],"createdDate":"2021-01-27T19:03:51Z","revisionDate":"2021-10-03T15:52:18Z","author":{"id":7280479,"name":"FaithlifeTeamServiceAccount"},"creator":{"id":7112867,"name":"GivingApi"},"metadata":{"source":"Subscriber"},"isHidden":false,"isDeleted":false,"summary":{"title":"Rosenburg
+        (Mitch & Thea)","image":"https://files.logoscdn.com/v1/files/45929050/content.svg?signature=Xco8xrdSYAdgP047oC15JeXDOjw"}},{"groupId":7699729,"recordId":"family-18047","revision":13,"schemaVersion":"3.1.7","recordFieldData":[{"fieldName":"familyName","data":{"value":{"value":"Salo","isInferred":false}},"dataKindName":"inferredString","dataKindVersion":"1.0.0","schemaFieldVersion":"1.1.1"},{"fieldName":"members","data":{"value":{"items":[]}},"dataKindName":"familyMembers","dataKindVersion":"1.0.0","schemaFieldVersion":"2.0.0"},{"fieldName":"addressAs","data":{"value":{"value":"","isInferred":true,"confidenceSource":""}},"dataKindName":"inferredString","dataKindVersion":"1.0.0","schemaFieldVersion":"1.1.1"},{"fieldName":"addresses","data":{"value":{"items":[{"verification":{"codes":["NO_GMAP_RESULT"]}}]}},"dataKindName":"address","dataKindVersion":"2.4.0","schemaFieldVersion":"2.2.5"},{"fieldName":"email","data":{"value":{"items":[{"key":"4247c316-c304-48a1-8bfa-c1e258ad1660","name":"Personal","value":"renn.salo@faithlife.com","isInferred":true}]}},"dataKindName":"keyValueEnum","dataKindVersion":"1.0.0","schemaFieldVersion":"1.2.0"},{"fieldName":"phone","data":{"value":{"items":[]}},"dataKindName":"phone","dataKindVersion":"1.1.0","schemaFieldVersion":"1.3.0"}],"createdDate":"2019-05-06T23:24:03Z","revisionDate":"2021-10-02T07:15:49Z","author":{"id":7280479,"name":"FaithlifeTeamServiceAccount"},"creator":{"id":7072994},"metadata":{"source":"Subscriber"},"isHidden":false,"isDeleted":false,"summary":{"title":"Salo","image":"https://files.logoscdn.com/v1/files/45929050/content.svg?signature=Xco8xrdSYAdgP047oC15JeXDOjw"}},{"groupId":7699729,"recordId":"family-1621091","revision":1025,"schemaVersion":"3.1.7","recordFieldData":[{"fieldName":"addresses","data":{"value":{"items":[{"city":"Bellingham","road":"809
+        Blackstone Court","text":"809 Blackstone Court, Bellingham, Washington 98226,
+        United States","unit":"","state":"Washington","county":"Whatcom County","country":"United
+        States","location":{"latitude":"48.7996954","longitude":"-122.465823"},"postcode":"98226","isInferred":false,"country_code":"US","house_number":"","neighborhood":"","state_district":"Washington"}]}},"dataKindName":"address","dataKindVersion":"2.4.0","schemaFieldVersion":"2.2.5"},{"fieldName":"familyName","data":{"value":{"value":"Salo
+        Family"}},"dataKindName":"inferredString","dataKindVersion":"1.0.0","schemaFieldVersion":"1.1.1"},{"fieldName":"members","data":{"value":{"items":[{"memberId":"people-204125","isPrimary":true}]}},"dataKindName":"familyMembers","dataKindVersion":"1.0.0","schemaFieldVersion":"2.0.0"},{"fieldName":"addressAs","data":{"value":{"value":"The
+        Salo Family","isInferred":true,"confidenceSource":"Family"}},"dataKindName":"inferredString","dataKindVersion":"1.0.0","schemaFieldVersion":"1.1.1"},{"fieldName":"email","data":{"value":{"items":[{"name":"","value":"renn.salo@faithlife.com","isInferred":true},{"name":"","value":"salorenn@gmail.com","isInferred":true},{"name":"","value":"salorenn+2emails@gmail.com","isInferred":true}],"confidenceSource":"Family"}},"dataKindName":"keyValueEnum","dataKindVersion":"1.0.0","schemaFieldVersion":"1.2.0"},{"fieldName":"phone","data":{"value":{"items":[{"name":"Mobile","value":"(509)
+        389-6657","isInferred":true,"preferences":{"canCall":{"value":true},"canText":{"value":true}},"includeInDirectory":true}],"confidenceSource":"Family"}},"dataKindName":"phone","dataKindVersion":"1.1.0","schemaFieldVersion":"1.3.0"}],"createdDate":"2021-01-25T19:32:43Z","revisionDate":"2021-10-03T15:52:18Z","author":{"id":7280479,"name":"FaithlifeTeamServiceAccount"},"creator":{"id":7112867,"name":"GivingApi"},"metadata":{"source":"Subscriber"},"isHidden":false,"isDeleted":false,"summary":{"title":"Salo
+        Family","image":"https://files.logoscdn.com/v1/files/45929050/content.svg?signature=Xco8xrdSYAdgP047oC15JeXDOjw"}},{"groupId":7699729,"recordId":"family-2362299","revision":1,"schemaVersion":"3.1.7","recordFieldData":[{"fieldName":"familyName","data":{"value":{"value":"tylor"}},"dataKindName":"inferredString","dataKindVersion":"1.0.0","schemaFieldVersion":"1.1.1"}],"createdDate":"2021-05-12T21:58:14Z","revisionDate":"2021-05-12T21:58:14Z","author":{"id":7112867,"name":"GivingApi"},"creator":{"id":7112867,"name":"GivingApi"},"isHidden":false,"isDeleted":false,"summary":{"title":"tylor","image":"https://files.logoscdn.com/v1/files/45929050/content.svg?signature=Xco8xrdSYAdgP047oC15JeXDOjw"}},{"groupId":7699729,"recordId":"family-3365694","revision":1,"schemaVersion":"3.1.7","recordFieldData":[{"fieldName":"familyName","data":{"value":{"value":"Untitled
+        Family","isInferred":true}},"dataKindName":"inferredString","dataKindVersion":"1.0.0","schemaFieldVersion":"1.1.1"}],"createdDate":"2021-09-09T15:39:40Z","revisionDate":"2021-09-09T15:39:40Z","author":{"id":11771821,"name":"Tim
+        Leland"},"creator":{"id":11771821,"name":"Tim Leland"},"metadata":{"source":"User"},"isHidden":false,"isDeleted":false,"summary":{"title":"Untitled
+        Family","image":"https://files.logoscdn.com/v1/files/45929050/content.svg?signature=Xco8xrdSYAdgP047oC15JeXDOjw"}}],"total":13}'
+    http_version: '2'
+    adapter_metadata:
+      effective_url: https://faithlife.com/proxy/chms/v1/group/7699729/records/family/get?schemaVersion=3.1.7
+  recorded_at: Fri, 21 Jan 2022 21:34:57 GMT
+recorded_with: VCR 6.0.0

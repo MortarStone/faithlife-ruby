@@ -6,7 +6,7 @@ module Faithlife
       def gifts(params = {})
         request(
           :get,
-          '/v1/merchants/GROUP_ID/gifts',
+          'https://givingapi.faithlife.com/v1/merchants/GROUP_ID/gifts',
           :gifts,
           params
         )
@@ -15,7 +15,7 @@ module Faithlife
       def gift(id, params = {})
         request(
           :get,
-          "/v1/merchants/GROUP_ID/gifts/#{id}",
+          "https://givingapi.faithlife.com/v1/merchants/GROUP_ID/gifts/#{id}",
           :gift,
           params
         )

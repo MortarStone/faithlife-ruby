@@ -6,7 +6,7 @@ module Faithlife
       def fund_groupings(params = {})
         request(
           :get,
-          '/v1/merchants/GROUP_ID/fundGroupings',
+          'https://givingapi.faithlife.com/v1/merchants/GROUP_ID/fundGroupings',
           :fundGroupings,
           params
         )

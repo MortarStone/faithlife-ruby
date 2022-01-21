@@ -5,11 +5,13 @@ require "#{File.dirname(__FILE__)}/auto_load.rb"
 module Faithlife
   class Client
     include Faithlife::Endpoints::Campaigns
+    include Faithlife::Endpoints::Families
     include Faithlife::Endpoints::FundGroupings
     include Faithlife::Endpoints::Funds
     include Faithlife::Endpoints::GiftSchedules
     include Faithlife::Endpoints::Gifts
     include Faithlife::Endpoints::Givers
+    include Faithlife::Endpoints::People
     include Faithlife::Endpoints::Pledges
 
     def initialize(options)
@@ -37,15 +39,11 @@ module Faithlife
 
     private
 
-    def base_url
-      'https://givingapi.faithlife.com'
-    end
-
     def oauth_params(method)
       consumer = OAuth::Consumer.new(
         @consumer_key,
         @consumer_secret,
-        site: base_url,
+        site: 'https://givingapi.faithlife.com',
         http_method: method,
         signature_method: 'PLAINTEXT'
         # debug_output: true
@@ -54,8 +52,8 @@ module Faithlife
       { consumer: consumer, token: access_token }
     end
 
-    def request(method, path, key_name, params = {}, body = nil)
-      request_url = "#{base_url}#{path}".gsub(/GROUP_ID/, @group_id)
+    def request(method, url, key_name, params = {}, body = nil)
+      request_url = url.gsub(/GROUP_ID/, @group_id)
       # puts "request_url: #{request_url}, params: #{params.inspect}, body: #{body.inspect}"
 
       hydra = Typhoeus::Hydra.new

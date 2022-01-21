@@ -3,7 +3,7 @@
 require_relative 'helper'
 
 gifts = @client.gifts(
-  from: Date.new(2020, 12, 1),
-  to: Date.new(2020, 12, 31)
+  from: '2019-02-25T00:00:00Z',
+  to: '2019-05-25T00:00:00Z'
 )
 print_gifts(gifts)
