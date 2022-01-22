@@ -1,0 +1,97 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://faithlife.com/proxy/chms/v1/group/7699729/records/organization/get?schemaVersion=2.0.2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+      Content-Type:
+      - application/json
+      Authorization:
+      - OAuth oauth_consumer_key="E424645A9BFC8CA64160484660189644ECA557B1", oauth_nonce="3ACMGvhKzX6ZO3GU9cCFpC4KaB15EpTTJc7NHQGBU",
+        oauth_signature="jgaDw5vXXJx11hJI2zX7ykTwblU%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1642887302", oauth_token="6C59544BF73F8C6157C8D2E87AE8A8F3BC62D08E",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      cache-control:
+      - no-cache, no-store, must-revalidate
+      pragma:
+      - no-cache
+      content-type:
+      - application/json; charset=utf-8
+      expires:
+      - "-1"
+      server:
+      - Microsoft-IIS/10.0
+      x-aspnetmvc-version:
+      - '5.2'
+      content-security-policy:
+      - script-src 'self'  'unsafe-inline' 'nonce-AbB1WBB5I9czUUK34tZQNw==' *.faithlifecdn.com
+        *.faithlife.com api.reftagger.com serve.faithlifeads.com platform.twitter.com
+        *.google.com connect.facebook.net cdn.syndication.twimg.com www.googletagmanager.com
+        www.google-analytics.com reftagger.bibliacdn.com cdnjs.cloudflare.com netdna.bootstrapcdn.com
+        *.live.net cdn.amplitude.com cdn.raygun.io request.eprotect.vantivprelive.com
+        request.eprotect.vantivcnp.com maps.googleapis.com www.gstatic.com www.sc.pages08.net
+        *.adroll.com d.adroll.mgr.consensu.org cdn.siftscience.com js.hs-scripts.com
+        www.recaptcha.net cdn.pendo.io data.pendo.io app.pendo.io pendo-static-5148149930131456.storage.googleapis.com  pendo-io-static.storage.googleapis.com
+        apple-pay-gateway.apple.com apple-pay-gateway-nc-pod1.apple.com apple-pay-gateway-nc-pod2.apple.com
+        apple-pay-gateway-nc-pod3.apple.com apple-pay-gateway-nc-pod4.apple.com apple-pay-gateway-nc-pod5.apple.com
+        apple-pay-gateway-pr-pod1.apple.com apple-pay-gateway-pr-pod2.apple.com apple-pay-gateway-pr-pod3.apple.com
+        apple-pay-gateway-pr-pod4.apple.com apple-pay-gateway-pr-pod5.apple.com cn-apple-pay-gateway-sh-pod1.apple.com
+        cn-apple-pay-gateway-sh-pod2.apple.com cn-apple-pay-gateway-sh-pod3.apple.com
+        cn-apple-pay-gateway-tj-pod1.apple.com cn-apple-pay-gateway-tj-pod2.apple.com
+        cn-apple-pay-gateway-tj-pod3.apple.com apple-pay-gateway-cert.apple.com cn-apple-pay-gateway-cert.apple.com
+        js.monitor.azure.com; object-src 'none'; base-uri 'none'
+      x-frame-options:
+      - SAMEORIGIN
+      x-user-id:
+      - '11915497'
+      x-aspnet-version:
+      - 4.0.30319
+      set-cookie:
+      - Session=01/22/2022 21:35:02; domain=faithlife.com; expires=Sun, 23-Jan-2022
+        21:35:02 GMT; path=/
+      request-context:
+      - appId=cid-v1:372a3c1f-f461-41c4-a2fa-f26f661d7241
+      access-control-expose-headers:
+      - Request-Context
+      date:
+      - Sat, 22 Jan 2022 21:35:02 GMT
+      content-length:
+      - '5691'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"records":[{"groupId":7699729,"recordId":"organization-1633345","revision":1,"schemaVersion":"2.0.2","recordFieldData":[{"fieldName":"name","data":{"value":"Chewd''s
+        Chewing Gum Emporium"},"dataKindName":"string","dataKindVersion":"1.0.0","schemaFieldVersion":"1.0.2"}],"createdDate":"2021-01-27T19:12:58Z","revisionDate":"2021-01-27T19:12:58Z","author":{"id":7112867,"name":"GivingApi"},"creator":{"id":7112867,"name":"GivingApi"},"isHidden":false,"isDeleted":false,"summary":{"title":"Chewd''s
+        Chewing Gum Emporium","image":"https://files.logoscdn.com/v1/files/45929045/content.svg?signature=qGAVfzDGXF9CZE3mfEC1I0Aa0N4"}},{"groupId":7699729,"recordId":"organization-428757","revision":2,"schemaVersion":"2.0.2","recordFieldData":[{"fieldName":"name","data":{"value":"Faithlife
+        Corporation"},"dataKindName":"string","dataKindVersion":"1.0.0","schemaFieldVersion":"1.0.2"},{"fieldName":"addresses","data":{"value":{"items":[{"city":"Bellingham","road":"1313
+        Commercial St","text":"1313 Commercial St, Bellingham, WA 98225, USA","unit":"","state":"WA","county":"Whatcom
+        County","country":"US","location":{"latitude":"48.75092009999999","longitude":"-122.4798594"},"postcode":"98225","isInferred":false,"country_code":"US","house_number":"","neighborhood":"","state_district":"WA"}]}},"dataKindName":"address","dataKindVersion":"2.4.0","schemaFieldVersion":"2.2.5"},{"fieldName":"email","data":{"value":{"items":[]}},"dataKindName":"keyValueEnum","dataKindVersion":"1.0.0","schemaFieldVersion":"1.2.0"},{"fieldName":"phone","data":{"value":{"items":[{"name":"Work","value":"(360)
+        527-1700","isInferred":false,"preferences":{"canCall":{"value":true},"canText":{"value":true}}}]}},"dataKindName":"phone","dataKindVersion":"1.1.0","schemaFieldVersion":"1.3.0"},{"fieldName":"socialProfiles","data":{"value":{"items":[]}},"dataKindName":"keyValueEnum","dataKindVersion":"1.0.0","schemaFieldVersion":"1.2.0"}],"createdDate":"2020-04-14T20:17:59Z","revisionDate":"2020-04-14T20:18:10Z","author":{"id":7072994},"creator":{"id":7072994},"isHidden":false,"isDeleted":false,"summary":{"title":"Faithlife
+        Corporation","image":"https://files.logoscdn.com/v1/files/45929045/content.svg?signature=qGAVfzDGXF9CZE3mfEC1I0Aa0N4"}},{"groupId":7699729,"recordId":"organization-1634026","revision":1,"schemaVersion":"2.0.2","recordFieldData":[{"fieldName":"email","data":{"value":{"items":[{"name":"","value":""}]}},"dataKindName":"keyValueEnum","dataKindVersion":"1.0.0","schemaFieldVersion":"1.2.0"},{"fieldName":"name","data":{"value":"Givens
+        Catering"},"dataKindName":"string","dataKindVersion":"1.0.0","schemaFieldVersion":"1.0.2"}],"createdDate":"2021-01-27T21:32:21Z","revisionDate":"2021-01-27T21:32:21Z","author":{"id":7112867,"name":"GivingApi"},"creator":{"id":7112867,"name":"GivingApi"},"isHidden":false,"isDeleted":false,"summary":{"title":"Givens
+        Catering","image":"https://files.logoscdn.com/v1/files/45929045/content.svg?signature=qGAVfzDGXF9CZE3mfEC1I0Aa0N4"}},{"groupId":7699729,"recordId":"organization-1622958","revision":1,"schemaVersion":"2.0.2","recordFieldData":[{"fieldName":"addresses","data":{"value":{"items":[{"city":"Bellingham","road":"1313
+        Commercial St","text":"1313 Commercial St Bellingham, Washington 98225, USA","state":"Washington","country":"USA","postcode":"98225"}]}},"dataKindName":"address","dataKindVersion":"2.4.0","schemaFieldVersion":"2.2.5"},{"fieldName":"name","data":{"value":"Givens
+        Consulting LLC"},"dataKindName":"string","dataKindVersion":"1.0.0","schemaFieldVersion":"1.0.2"}],"createdDate":"2021-01-25T23:14:20Z","revisionDate":"2021-01-25T23:14:20Z","author":{"id":7112867,"name":"GivingApi"},"creator":{"id":7112867,"name":"GivingApi"},"isHidden":false,"isDeleted":false,"summary":{"title":"Givens
+        Consulting LLC","image":"https://files.logoscdn.com/v1/files/45929045/content.svg?signature=qGAVfzDGXF9CZE3mfEC1I0Aa0N4"}},{"groupId":7699729,"recordId":"organization-1634017","revision":1,"schemaVersion":"2.0.2","recordFieldData":[{"fieldName":"addresses","data":{"value":{"items":[{"city":"Bellingham","road":"1313
+        Commercial St","text":"1313 Commercial St Bellingham, Washington 98225, USA","state":"Washington","country":"USA","postcode":"98225"}]}},"dataKindName":"address","dataKindVersion":"2.4.0","schemaFieldVersion":"2.2.5"},{"fieldName":"name","data":{"value":"Givens
+        Enterprises LLC"},"dataKindName":"string","dataKindVersion":"1.0.0","schemaFieldVersion":"1.0.2"}],"createdDate":"2021-01-27T21:27:53Z","revisionDate":"2021-01-27T21:27:53Z","author":{"id":7112867,"name":"GivingApi"},"creator":{"id":7112867,"name":"GivingApi"},"isHidden":false,"isDeleted":false,"summary":{"title":"Givens
+        Enterprises LLC","image":"https://files.logoscdn.com/v1/files/45929045/content.svg?signature=qGAVfzDGXF9CZE3mfEC1I0Aa0N4"}},{"groupId":7699729,"recordId":"organization-1670972","revision":1,"schemaVersion":"2.0.2","recordFieldData":[{"fieldName":"addresses","data":{"value":{"items":[{"city":"Bellingham","road":"123
+        Four Str.","text":"123 Four Str. Bellingham, Washington 98225, USA","state":"Washington","country":"USA","postcode":"98225"}]}},"dataKindName":"address","dataKindVersion":"2.4.0","schemaFieldVersion":"2.2.5"},{"fieldName":"name","data":{"value":"Rosenburg''s
+        Respectable Rose Bushes"},"dataKindName":"string","dataKindVersion":"1.0.0","schemaFieldVersion":"1.0.2"}],"createdDate":"2021-02-03T18:12:25Z","revisionDate":"2021-02-03T18:12:25Z","author":{"id":7112867,"name":"GivingApi"},"creator":{"id":7112867,"name":"GivingApi"},"isHidden":false,"isDeleted":false,"summary":{"title":"Rosenburg''s
+        Respectable Rose Bushes","image":"https://files.logoscdn.com/v1/files/45929045/content.svg?signature=qGAVfzDGXF9CZE3mfEC1I0Aa0N4"}}],"total":6}'
+    http_version: '2'
+    adapter_metadata:
+      effective_url: https://faithlife.com/proxy/chms/v1/group/7699729/records/organization/get?schemaVersion=2.0.2
+  recorded_at: Sat, 22 Jan 2022 21:35:03 GMT
+recorded_with: VCR 6.0.0

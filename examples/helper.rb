@@ -10,6 +10,7 @@ require_relative 'helpers/funds'
 require_relative 'helpers/gift_schedules'
 require_relative 'helpers/gifts'
 require_relative 'helpers/givers'
+require_relative 'helpers/organizations'
 require_relative 'helpers/people'
 require_relative 'helpers/pledges'
 

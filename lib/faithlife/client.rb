@@ -11,6 +11,7 @@ module Faithlife
     include Faithlife::Endpoints::GiftSchedules
     include Faithlife::Endpoints::Gifts
     include Faithlife::Endpoints::Givers
+    include Faithlife::Endpoints::Organizations
     include Faithlife::Endpoints::People
     include Faithlife::Endpoints::Pledges
 
