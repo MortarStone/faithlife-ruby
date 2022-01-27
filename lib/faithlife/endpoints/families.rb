@@ -6,7 +6,7 @@ module Faithlife
       def families(params = {})
         request(
           :get,
-          'https://faithlife.com/proxy/chms/v1/group/GROUP_ID/records/family/get',
+          "https://faithlife.com/proxy/chms/v1/group/#{@chms_group_id}/records/family/get",
           :records,
           { schemaVersion: '3.1.7' }.merge(params)
         )

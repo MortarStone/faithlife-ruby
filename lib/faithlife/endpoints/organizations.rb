@@ -6,7 +6,7 @@ module Faithlife
       def organizations(params = {})
         request(
           :get,
-          'https://faithlife.com/proxy/chms/v1/group/GROUP_ID/records/organization/get',
+          "https://faithlife.com/proxy/chms/v1/group/#{@chms_group_id}/records/organization/get",
           :records,
           { schemaVersion: '2.0.2' }.merge(params)
         )

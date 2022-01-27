@@ -6,7 +6,7 @@ module Faithlife
       def campaigns(params = {})
         request(
           :get,
-          'https://givingapi.faithlife.com/v1/merchants/GROUP_ID/campaigns',
+          "https://givingapi.faithlife.com/v1/merchants/#{@giving_group_id}/campaigns",
           :campaigns,
           params
         )

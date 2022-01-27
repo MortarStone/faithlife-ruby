@@ -18,7 +18,8 @@ require 'dotenv'
 Dotenv.load('../.env')
 
 @client = Faithlife::Client.new(
-  group_id: ENV['GROUP_ID'],
+  chms_group_id: ENV['CHMS_GROUP_ID'],
+  giving_group_id: ENV['GIVING_GROUP_ID'],
   consumer_key: ENV['CONSUMER_KEY'],
   consumer_secret: ENV['CONSUMER_SECRET'],
   oauth_token: ENV['OAUTH_TOKEN'],

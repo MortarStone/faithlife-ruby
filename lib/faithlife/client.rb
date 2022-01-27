@@ -16,15 +16,20 @@ module Faithlife
     include Faithlife::Endpoints::Pledges
 
     def initialize(options)
-      @group_id = options[:group_id]
+      @chms_group_id = options[:chms_group_id]
+      @giving_group_id = options[:giving_group_id]
       @consumer_key = options[:consumer_key]
       @consumer_secret = options[:consumer_secret]
       @oauth_token = options[:oauth_token]
       @oauth_secret = options[:oauth_secret]
     end
 
-    def self.oauth_consumer(group_id, consumer_key, consumer_secret)
-      raise Faithlife::Exceptions::FaithlifeStandardError, 'Group id, consumer key and consumer secret cannot be blank' if group_id.nil? || consumer_key.nil? || consumer_secret.nil?
+    def self.oauth_consumer(chms_group_id, giving_group_id, consumer_key, consumer_secret)
+      if chms_group_id.nil? || giving_group_id.nil? || consumer_key.nil? || consumer_secret.nil?
+        raise Faithlife::Exceptions::FaithlifeStandardError,
+              'ChMS group id, giving_group_id, consumer key and consumer secret ' \
+              'cannot be blank'
+      end
 
       OAuth::Consumer.new(
         consumer_key,
@@ -53,8 +58,7 @@ module Faithlife
       { consumer: consumer, token: access_token }
     end
 
-    def request(method, url, key_name, params = {}, body = nil)
-      request_url = url.gsub(/GROUP_ID/, @group_id)
+    def request(method, request_url, key_name, params = {}, body = nil)
       # puts "request_url: #{request_url}, params: #{params.inspect}, body: #{body.inspect}"
 
       hydra = Typhoeus::Hydra.new
